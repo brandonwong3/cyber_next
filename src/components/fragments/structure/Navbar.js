@@ -28,8 +28,9 @@ const Navbar = () => {
 				<div className={"navbar-nav"}>
 					<NavDropdownSection />
 					{
-						(currentUser && Object.keys(currentUser).length > 0) &&
-						<img onClick={async () => await handleLogout()} alt={"Logout button"} src={logoutArrow} height={20} width={20} className={"cursor-hover ml-1"} />
+						(currentUser && Object.keys(currentUser).length > 0) ?
+						<img onClick={async () => await handleLogout()} alt={"Logout button"} src={logoutArrow} height={20} width={20} className={"cursor-hover ml-1"} /> :
+                        <Link to={"/login"} className="nav-link active text-white font-italic mr-2" aria-current="page">Log In</Link>
 					}
 				</div>
 
