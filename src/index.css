@@ -7,6 +7,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.homeAbout {
+	text-align: center;
+}
+
 .teaser,
 .container h2 {
 	padding: 12px;
