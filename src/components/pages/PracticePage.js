@@ -16,24 +16,22 @@ const QuizCard = ({title = 'Test Card', description = 'Test description', diffic
 		<div key={title} onClick={event => navigateToQuiz(event)} className={"flex flex-col bg-white rounded-lg shadow-lg p-4 m-4 col-3 cursor-pointer"}>
 			<div className={"flex flex-row"}>
 				<div className={"flex flex-col"}>
-					<h1>{title}</h1>
-					<p>{description}</p>
+					<h4 className={"font-bold"}>{title}</h4>
+					<small>{description}</small>
 
-					<div className={"flex flex-row"}>
-						{
-							categories.map((category, index) => {
-								return (
-									<p key={index.toString()} className={"text-xs text-gray-500"}>{category}</p>
-								)
-							}
-						)}
-					</div>
-
-					<div className={"flex flex-col"}>
-						<p className={"text-xs text-gray-500"}><b>DIFFICULTY LEVEL:</b> {difficulty}</p>
-
-						<p className={"text-xs text-gray-500"}><b>QUESTIONS:</b> {countQuestions}</p>
-
+					<div className={"flex flex-col mt-1"}>
+						<div className={"flex flex-row items-end my-0"}>
+							<p className={"text-xs text-gray-500 mr-1 my-0"}><b>{categories.length === 1 ? 'Category: ' : 'Categories: '}</b> </p>
+							{
+								categories.map((category, index) => {
+									return (
+										<p key={index.toString()} className={"text-xs text-gray-500 my-0"}>{category}</p>
+									)
+								}
+							)}
+						</div>
+						<p className={"text-xs text-gray-500 my-0"}><b>DIFFICULTY LEVEL:</b> {difficulty}</p>
+						<p className={"text-xs text-gray-500 my-0"}><b>QUESTIONS:</b> {countQuestions}</p>
 					</div>
 
 				</div>
@@ -49,11 +47,15 @@ const QuizCard = ({title = 'Test Card', description = 'Test description', diffic
 const LeftSideVerticalNavbar = ({filter, setFilter}) => {
 	return (
 		<div className={"flex flex-col"}>
+
+			<h5 className={"font-bold"}><u>Filter</u></h5>
+
 			<div className={"flex flex-col"}>
+				<p className={'font-bold mb-0'}>Difficulty</p>
 				{
-					Object.keys(DIFFICULTY).map((difficulty, index) => {
+					Object.values(DIFFICULTY).map((difficulty, index) => {
 						return (
-							<div key={index.toString()} className={"flex flex-row"}>
+							<div key={index.toString()} className={"flex flex-row items-center align-center"}>
 								<input type={"checkbox"} value={difficulty} onChange={(e) => {
 									if (e.target.checked) {
 										setFilter({
@@ -67,36 +69,40 @@ const LeftSideVerticalNavbar = ({filter, setFilter}) => {
 										})
 									}
 								}} />
-								<p>{difficulty}</p>
+								<small className={"my-auto ml-1"}>{difficulty}</small>
 							</div>
 						)
 					})
 				}
 			</div>
-			<div className={"flex flex-col"}>
+			<div className={"flex flex-col mt-2"}>
+				<p className={'font-bold mb-0'}>Category</p>
 				{
-					Object.keys(CATEGORIES).map((category, index) => {
+					Object.values(CATEGORIES).map((category, index) => {
 						return (
-							<div key={index.toString()} className={"flex flex-row"}>
+							<div key={index.toString()} className={"flex flex-row items-center align-center"}>
 								<input type={"checkbox"} value={category} onChange={(e) => {
 									if (e.target.checked) {
 										setFilter({
 											...filter,
-											category: [...filter.category, category]
+											categories: [...filter.categories, category]
 										})
 									} else {
 										setFilter({
 											...filter,
-											category: filter.category.filter(c => c !== category)
+											categories: filter.categories.filter(c => c !== category)
 										})
 									}
 								}} />
-								<p>{category}</p>
+								<small className={"my-auto ml-1"}>{category}</small>
 							</div>
 						)
 					})
 				}
 			</div>
+
+			<small onClick={(event) => {event.preventDefault(); setFilter({difficulty: [], categories: []})}} className={"cursor-hover cursor-pointer text-blue font-bold mt-2"}><u>Reset</u></small>
+
 		</div>
 	)
 }
@@ -105,29 +111,30 @@ const PracticePage = () => {
 
 	const [filter, setFilter] = React.useState({
 		difficulty: [],
-		category: []
+		categories: []
 	});
 
 	const quizzesToDisplay = React.useMemo(() => {
-		if (filter.difficulty.length === 0 && filter.category.length === 0) {
+		if (filter.difficulty.length === 0 && filter.categories.length === 0) {
 			return ALL_QUIZZES;
 		}
+
+		// NOTE: This filter is for filtering out the quizzes to display. This means that If the field for difficulty "Easy" is
+		// checked, alongside the category "Site Security", then only quizzes that are "Easy" difficulty and have the category
+		// "Site Security" will be displayed.
+
+		// Map through all the quizzes and find the ones where the difficulty for the quiz is in the filter.difficulty array,
+		// or at least one of the categories of the quiz are in the filter.categories array.
 		return ALL_QUIZZES.filter(quiz => {
-			let filterKeys = Object.keys(filter);
-			// eslint-disable-next-line array-callback-return
-			return filterKeys.every(key => {
-				if (key === 'difficulty') {
-					return filter[key].includes(quiz[key]);
-				} else if (key === 'category') {
-					return filter[key].includes(quiz[key]);
-				}
-			})
-		})
+			return (filter.difficulty.length === 0 || filter.difficulty.includes(quiz.difficulty)) &&
+				(filter.categories.length === 0 || quiz.categories.some(category => filter.categories.includes(category)));
+		});
 	}, [filter]);
 
 	return (
 		<BaseTemplate>
-			<div className={"mx-auto flex justify-center flex-grow flex-1 align-center"}>
+			<h1 className={"text-center mt-4"}>Practice Page</h1>
+			<div className={"flex-grow flex-1"}>
 
 				<div className={'flex flex-row'}>
 					<div className={"flex flex-col flex-shrink"}>
@@ -136,7 +143,7 @@ const PracticePage = () => {
 
 					{/* The main navigation with the cards. */}
 					<div className={"flex flex-col flex-grow"}>
-						<div className={"flex flex-row flex-wrap justify-center row"}>
+						<div className={"row justify-content-center"}>
 							{
 								quizzesToDisplay.map((quiz, index) => {
 									return (

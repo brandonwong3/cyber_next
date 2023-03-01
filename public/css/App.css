@@ -405,3 +405,29 @@ code {
 .bg-navy-blue {
 	background-color: #0a192f !important;
 }
+
+.ml-1 {
+	margin-left: 0.25rem !important;
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.text-blue {
+	color: #3490dc !important;
+}
+
+
+.quiz-card {
+	max-width: 100%;
+}
+
+.quiz-card h1, h2, h3, h4, h5, p {
+	word-wrap: break-word;
+}
+
+.my-0 {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
