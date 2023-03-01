@@ -98,6 +98,14 @@ const IndexPage = () => {
 					</div>
 				</div>
 			</div>
+
+			{/* Button on Bottom Page (Login/Signup) */}
+			<div className="button-container">
+				<Link to="/Login">
+					<button>Get Started! Signup or Login Today →</button>
+				</Link>
+			</div>
+
 		</BaseTemplate>
 
 	);

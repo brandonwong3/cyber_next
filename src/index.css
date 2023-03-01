@@ -140,4 +140,29 @@ body {
 	justify-content: center;
 	gap: 50px;
 	margin-top: 40px;
+	padding-bottom: 20px;
 }
+
+/* Button on Bottom of Home Page */
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* add align-items */
+	text-align: center;
+	/* add text-align */
+	margin-top: 60px;
+	padding-bottom: 100px;
+
+}
+
+button {
+	background-color: #94DADE;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	border: none;
+	padding: 30px 30px;
+	border-radius: 5px;
+	width: 1000px;
+	}
