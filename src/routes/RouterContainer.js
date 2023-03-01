@@ -47,7 +47,7 @@ const RouterContainer = () => {
 					<AltSpecialRouter path={"/learn"} isAuthorizationRequired={false} component={LearnPage} exact={true} />
 					<AltSpecialRouter path={"/our-services"} isAuthorizationRequired={false} component={OurServicesPage} exact={true} />
 					<AltSpecialRouter path={"/search"} isAuthorizationRequired={false} component={SearchPage} exact={true} />
-					<AltSpecialRouter path={"/practice"} isAuthorizationRequired={true} component={PracticePage} exact={true} />
+					<AltSpecialRouter path={"/practice"} isAuthorizationRequired={false} component={PracticePage} exact={true} />
 					<AltSpecialRouter path={"/practice/broken-auth"} isAuthorizationRequired={false} component={PracticeBrokenAuthPage} exact={true} />
 					<AltSpecialRouter path={"/practice/cross-site-scripting"} isAuthorizationRequired={false} component={PracticeCrossSiteScriptingPage}  />
 					<AltSpecialRouter path={"/practice/sql-injection"} isAuthorizationRequired={false} component={PracticeSQLInjectionPage} exact={true} />
