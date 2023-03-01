@@ -23,6 +23,7 @@ import PracticeSQLInjectionPage from '../components/pages/stacks/practice/Practi
 import ReadForStudentsPage from '../components/pages/stacks/read/ReadForStudentsPage';
 import ReadForBusinessPage from '../components/pages/stacks/read/ReadForBusinessPage';
 import ReadWhatsNextPage from '../components/pages/stacks/read/ReadWhatsNextPage';
+import QuizPage from '../components/pages/QuizPage';
 
 // Test page
 import TestPage from '../components/pages/TestPage';
@@ -38,6 +39,7 @@ const RouterContainer = () => {
 				<Navbar />
 
 				<Switch>
+
 					<AltSpecialRouter path={"/home"} isAuthorizationRequired={true} component={HomePage} exact={true} />
 					<AltSpecialRouter path={"/demo"} isAuthorizationRequired={true} component={DemoPage} exact={true} />
 					<AltSpecialRouter path={"/about-us"} isAuthorizationRequired={false} component={AboutUsPage} exact={true} />
@@ -56,6 +58,7 @@ const RouterContainer = () => {
 					<AltSpecialRouter path={"/test"} isAuthorizationRequired={false} component={TestPage} exact={true} />
 					<AltSpecialRouter path={"/login"} isAuthorizationRequired={false} component={LoginPage} exact={true} />
 					<AltSpecialRouter path={"/signup"} isAuthorizationRequired={false} component={SignupPage} exact={true} />
+					<AltSpecialRouter path={"/quiz/:quizUrlPath"} isAuthorizationRequired={false} component={QuizPage} exact={false} />
 					<AltSpecialRouter path={"/"} isAuthorizationRequired={false} component={IndexPage} exact={true} />
 				</Switch>
 

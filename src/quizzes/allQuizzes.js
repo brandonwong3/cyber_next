@@ -6,7 +6,6 @@ const ALL_QUIZZES = [
 
 const allQuizUrlPaths = ALL_QUIZZES.map(quiz => quiz.urlPath);
 
-
 export {
 	ALL_QUIZZES,
 	allQuizUrlPaths,		// Use this to filter/check if quiz is available

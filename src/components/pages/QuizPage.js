@@ -1,6 +1,6 @@
 import React from 'react';
 import QuizTemplate from '../templates/QuizTemplate';
-import {useLocation} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import {ALL_QUIZZES, allQuizUrlPaths} from '../../quizzes/allQuizzes';
 import BaseTemplate from '../templates/BaseTemplate';
 
@@ -9,24 +9,14 @@ import BaseTemplate from '../templates/BaseTemplate';
 
 const QuizPage = () => {
 
-	const location = useLocation();
-
-	React.useEffect(() => {
-		console.log(location);
-		console.log(location.state);
-		console.log(location.pathname);
-	}, [location]);
+	const {quizUrlPath} = useParams();		// Case-sensitive
 
 	const isValidQuizPath = React.useMemo(() => {
-		let rawUrlPath = location.pathname;
-		rawUrlPath = rawUrlPath.replace('/quiz/', '');
-		return rawUrlPath in allQuizUrlPaths;
-	}, [location.pathname]);
+		return allQuizUrlPaths.includes(quizUrlPath);
+	}, [quizUrlPath]);
 
 	if (isValidQuizPath) {
-		let rawUrlPath = location.pathname;
-		rawUrlPath = rawUrlPath.replace('/quiz/', '');
-		const quiz = ALL_QUIZZES.find(quiz => quiz.urlPath === rawUrlPath);
+		const quiz = ALL_QUIZZES.find(quiz => quiz.urlPath === quizUrlPath);
 		return (
 			<BaseTemplate>
 				<div className={'force-absolute-center'}>
@@ -47,11 +37,6 @@ const Quiz = ({title = 'Quiz Title', questions = []}) => {
 	const [currentQuestionIndex, setCurrentQuestionIndex] = React.useState(0);
 	const [questionsData, setQuestionsData] = React.useState(questions);
 
-
-	React.useEffect(() => {
-		// Set the page title using the DOM
-		document.title = `PenSec Quiz | ${title}`;
-	}, [title])
 
 	return (
 		<div className={'flex flex-1 flex-grow justify-center items-center align-center'}>
