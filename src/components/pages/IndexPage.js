@@ -2,12 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BaseTemplate from '../templates/BaseTemplate';
 
-
 const IndexPage = () => {
 	return (
 		<BaseTemplate>
 			<div className={"mx-auto flex justify-center flex-grow flex-1 align-center"}>
-				<div className='homeAbout'>
+				<div className='homeDescr'>
 					<h1>Welcome to PenSec!</h1>
 					<p>An educational and informative website for small businesses and students
 						to learn more about penetration testing. With easy to follow guided demos and
@@ -26,6 +25,7 @@ const IndexPage = () => {
 							<Link to="/read/for-business">
 								<img className='icon' src='https://static.thenounproject.com/png/589389-200.png' alt='security in business' />
 							</Link>
+
 						</div>
 						<p className="caption">Securing Your Business</p>
 					</div>
@@ -64,6 +64,39 @@ const IndexPage = () => {
 				</div>
 			</div>
 
+			{/* About Section */}
+			<div className='about-main-container'>
+				<div className="about-container">
+					<div className="about-box">
+						<img src="../images/Anokhi.jpg" alt="Team Member Anokhi Shah" />
+						<p>Anokhi Shah</p>
+					</div>
+				</div>
+				<div className="about-container">
+					<div className="about-box">
+						<img src="../images/Bandhna.jpg" alt="Team Member Bandhna Bedi" />
+						<p>Bandhna Bedi</p>
+					</div>
+				</div>
+				<div className="about-container">
+					<div className="about-box">
+						<img src="../images/Tyrell.jpg" alt="Team Member Tyrell Garza" />
+						<p>Tyrell Garza</p>
+					</div>
+				</div>
+				<div className="about-container">
+					<div className="about-box">
+						<img src="../images/Ishita.jpg" alt="Team Member Ishita Saxena" />
+						<p>Ishita Saxena</p>
+					</div>
+				</div>
+				<div className="about-container">
+					<div className="about-box">
+						<img src="../images/Brandon.jpg" alt="Team Member Brandon Wong" />
+						<p>Brandon Wong</p>
+					</div>
+				</div>
+			</div>
 		</BaseTemplate>
 
 	);
