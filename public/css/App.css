@@ -239,6 +239,10 @@ body {
 	border-radius: 1rem;
 }
 
+.rounded-full {
+	border-radius: 50% !important;
+}
+
 .bg-pastel-green {
 	background-color: #8bd6d8 !important;
 }
@@ -358,3 +362,78 @@ body {
 }
 
 
+code {
+	font-family: monospace;
+}
+
+.text-red {
+	color: #dc3545 !important;
+}
+
+.text-green {
+	color: #28a745 !important;
+}
+
+.force-absolute-center {
+	position: absolute !important;
+	top: 50% !important;
+	left: 50% !important;
+	transform: translate(-50%, -50%) !important;
+}
+
+.h-2 {
+	height: 0.5rem !important;
+}
+
+.w-2 {
+	width: 0.5rem !important;
+}
+
+.bg-green-500 {
+	background-color: #48bb78 !important;
+}
+
+.bg-gray-300 {
+	background-color: #e2e8f0 !important;
+}
+
+.mt-10 {
+	margin-top: 2.5rem !important;
+}
+
+
+.bg-navy-blue {
+	background-color: #0a192f !important;
+}
+
+.ml-1 {
+	margin-left: 0.25rem !important;
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.text-blue {
+	color: #3490dc !important;
+}
+
+
+.quiz-card {
+	max-width: 100%;
+}
+
+.quiz-card h1, h2, h3, h4, h5, p {
+	word-wrap: break-word;
+}
+
+.my-0 {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
