@@ -65,6 +65,7 @@ const IndexPage = () => {
 			</div>
 
 			{/* About Section */}
+			<h2 className='about-heading'>Meet the Team:</h2>
 			<div className='about-main-container'>
 				<div className="about-container">
 					<div className="about-box">
