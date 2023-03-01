@@ -13,7 +13,7 @@ const QuizCard = ({title = 'Test Card', description = 'Test description', diffic
 	}
 
 	return (
-		<div key={title} onClick={event => navigateToQuiz(event)} className={"flex flex-col bg-white rounded-lg shadow-lg p-4 m-4 col-4 cursor-pointer"}>
+		<div key={title} onClick={event => navigateToQuiz(event)} className={"flex flex-col bg-white rounded-lg shadow-lg p-4 m-4 col-3 cursor-pointer"}>
 			<div className={"flex flex-row"}>
 				<div className={"flex flex-col"}>
 					<h1>{title}</h1>
@@ -29,10 +29,10 @@ const QuizCard = ({title = 'Test Card', description = 'Test description', diffic
 						)}
 					</div>
 
-					<div className={"flex flex-row"}>
-						<p className={"text-xs text-gray-500"}>{difficulty}</p>
+					<div className={"flex flex-col"}>
+						<p className={"text-xs text-gray-500"}><b>DIFFICULTY LEVEL:</b> {difficulty}</p>
 
-						<p className={"text-xs text-gray-500"}>{countQuestions} questions</p>
+						<p className={"text-xs text-gray-500"}><b>QUESTIONS:</b> {countQuestions}</p>
 
 					</div>
 
@@ -109,6 +109,9 @@ const PracticePage = () => {
 	});
 
 	const quizzesToDisplay = React.useMemo(() => {
+		if (filter.difficulty.length === 0 && filter.category.length === 0) {
+			return ALL_QUIZZES;
+		}
 		return ALL_QUIZZES.filter(quiz => {
 			let filterKeys = Object.keys(filter);
 			// eslint-disable-next-line array-callback-return

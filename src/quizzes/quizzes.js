@@ -1,8 +1,5 @@
 export const CATEGORIES = {
 	NETWORKING: 'Networking',
-	PAYLOAD_ANALYSIS: 'Payload Analysis',
-	TRAFFIC_ANOMALY: 'Traffic Anomaly',
-	GEOLOCATION: 'Geolocation',
 	AUTHENTICATION: 'Authentication',
 	SITE_SECURITY: 'Site Security',
 	DATA: 'Data',
