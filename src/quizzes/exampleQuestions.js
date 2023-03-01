@@ -38,7 +38,7 @@ export const MULTIPLE_CHOICE_QUESTION_STRUCT = {
 			isCorrect: false,
 		}
 		],
-	hint: 'Use your brain.',
+	hint: 'Use your brain.',			// It is required to have a hint. Put null if there is no hint to display
 	example: 'HAHA',
 	answeredCorrectly: false,
 };

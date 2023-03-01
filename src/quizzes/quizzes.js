@@ -4,6 +4,8 @@ export const CATEGORIES = {
 	TRAFFIC_ANOMALY: 'Traffic Anomaly',
 	GEOLOCATION: 'Geolocation',
 	AUTHENTICATION: 'Authentication',
+	SITE_SECURITY: 'Site Security',
+	DATA: 'Data',
 };
 
 export const DIFFICULTY = {
