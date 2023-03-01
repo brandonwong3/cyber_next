@@ -43,6 +43,11 @@ const Navbar = () => {
 
 const NavDropdownSection = () => {
 
+	const navigateTo = (path) => {
+		// Use the DOM to navigate to the path
+		window.location.href = path;
+	};
+
 	return (
 		<>
 			{/*	READ */}
@@ -70,7 +75,7 @@ const NavDropdownSection = () => {
 				<ul className="navbar-nav">
 					<li className="nav-item dropdown">
 						{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-						<a className="nav-link dropdown-toggle nav-link active text-white font-italic" id="practice-dropdown-menu-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<a onClick={(event) => {event.preventDefault(); navigateTo('practice');}} className="nav-link dropdown-toggle nav-link active text-white font-italic" id="practice-dropdown-menu-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Practice
 						</a>
 						<ul className="dropdown-menu dr-right-override" aria-labelledby="practice-dropdown-menu-link">
@@ -89,27 +94,3 @@ const NavDropdownSection = () => {
 
 
 export default Navbar;
-
-// OLD NAVBAR CODE
-// <div className="navbar-nav">
-// 					{
-// 						(currentUser && Object.keys(currentUser).length > 0) ? (
-// 							<div className={"flex flex-row flex-shrink justify-end items-center"}>
-// 								<Link to={"/about-us"} className="nav-link active text-white font-italic mr-2" aria-current="page">About Us</Link>
-// 								<Link to={"/our-services"} className="nav-link active text-white font-italic mr-2" aria-current="page">Our Services</Link>
-// 								<img onClick={async () => await handleLogout()} alt={"Logout button"} src={logoutArrow} height={20} width={20} className={"cursor-hover ml-1"} />
-// 							</div>
-// 						): (
-// 							<div className={"flex flex-row flex-shrink justify-end items-center"}>
-// 								<Link to={"/about-us"} className="nav-link active text-white font-italic mr-2" aria-current="page">About Us</Link>
-// 								<Link to={"/our-services"} className="nav-link active text-white font-italic mr-2" aria-current="page">Our Services</Link>
-// 								<Link to={"/login"} className="nav-link active text-white font-italic mr-2" aria-current="page">Log In</Link>
-// 								<Link to={"/search"} className="nav-link active text-white font-italic flex flex-row justify-end items-center" aria-current="page">
-// 									Search
-// 									<span className={"w-2 flex flex-row"} />
-// 									<img onClick={() => window.location.assign('/search')} alt={"Logout button"} src={searchGlass} height={16} width={16} className={"cursor-hover ml-2"} />
-// 								</Link>
-// 							</div>
-// 						)
-// 					}
-// 				</div>
