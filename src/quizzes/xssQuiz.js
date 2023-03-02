@@ -16,7 +16,7 @@ const QUESTION_1 = {
 
 export const xssQuiz = {
 	title: 'Cross-Site Scripting',
-	categories: [CATEGORIES.SITE_SECURITY],	// Choose one or more from above constants to add to array
+	categories: [CATEGORIES.XXS],	// Choose one or more from above constants to add to array
 	difficulty: DIFFICULTY.MEDIUM,				// Choose one from above constants
 	description: 'This question will test your knowledge about cross-site scripting domains',
 	urlPath: 'cross-site-scripting',			// This will be the url path to access this quiz (ex: /quiz/authentication); it cannot contain spaces

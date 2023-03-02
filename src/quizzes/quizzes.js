@@ -1,15 +1,13 @@
 export const CATEGORIES = {
-	NETWORKING: 'Networking',
-	AUTHENTICATION: 'Authentication',
-	SITE_SECURITY: 'Site Security',
-	DATA: 'Data',
+	XXS: 'Cross-Site Scripting',
+	SQLI: 'SQL Injection',
+	BROKEN_AUTHENTICATION: 'Broken Authentication',
 };
 
 export const DIFFICULTY = {
 	EASY: 'Easy',
 	MEDIUM: 'Medium',
-	HARD: 'Hard',
-	EXTREME: 'Extreme',
+	HARD: 'Hard'
 };
 
 

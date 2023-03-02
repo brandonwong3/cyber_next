@@ -2,7 +2,6 @@ import React from 'react';
 import { useAuth } from "../../../context/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 import logoutArrow from '../../../assets/images/logout-arrow.png';
-// import searchGlass from '../../../assets/images/search.png'
 
 
 const Navbar = () => {
@@ -43,11 +42,6 @@ const Navbar = () => {
 
 const NavDropdownSection = () => {
 
-	const navigateTo = (path) => {
-		// Use the DOM to navigate to the path
-		window.location.href = path;
-	};
-
 	return (
 		<>
 			{/*	READ */}
@@ -71,21 +65,7 @@ const NavDropdownSection = () => {
 			<Link className={"nav-link active text-white font-italic mr-2"} to={"/learn"}>Learn</Link>
 
 			{/*	PRACTICE */}
-			<div className="mr-2" id="practice-dropdown">
-				<ul className="navbar-nav">
-					<li className="nav-item dropdown">
-						{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-						<a onClick={(event) => {event.preventDefault(); navigateTo('practice');}} className="nav-link dropdown-toggle nav-link active text-white font-italic" id="practice-dropdown-menu-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Practice
-						</a>
-						<ul className="dropdown-menu dr-right-override" aria-labelledby="practice-dropdown-menu-link">
-							<li><Link className="dropdown-item" to={"/practice/sql-injection"}>SQL Injection</Link></li>
-							<li><Link className="dropdown-item" to={"/practice/cross-site-scripting"}>Cross-Site Scripting</Link></li>
-							<li><Link className="dropdown-item" to={"/practice/broken-auth"}>Broken Auth</Link></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+			<Link className={"nav-link active text-white font-italic mr-2"} to={"/practice"}>Practice</Link>
 
 		</>
 	)

@@ -29,7 +29,7 @@ const QUESTION_1 = {
 
 export const testQuiz = {
 	title: 'Test Quiz',
-	categories: [CATEGORIES.NETWORKING],	// Choose one or more from above constants to add to array
+	categories: [CATEGORIES.XXS],	// Choose one or more from above constants to add to array
 	difficulty: DIFFICULTY.HARD,				// Choose one from above constants
 	description: 'This is a Test Quiz',
 	urlPath: 'test-quiz',					// This will be the url path to access this quiz (ex: /quiz/authentication); it cannot contain spaces
