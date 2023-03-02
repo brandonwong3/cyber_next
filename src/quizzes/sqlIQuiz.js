@@ -29,7 +29,7 @@ const QUESTION_1 = {
 
 export const sqlIQuiz = {
 	title: 'SQL Injection',
-	categories: [CATEGORIES.DATA],	// Choose one or more from above constants to add to array
+	categories: [CATEGORIES.SQLI],	// Choose one or more from above constants to add to array
 	difficulty: DIFFICULTY.MEDIUM,				// Choose one from above constants
 	description: 'This question will test your knowledge about SQL user credentials.',
 	urlPath: 'sql-injection',					// This will be the url path to access this quiz (ex: /quiz/authentication); it cannot contain spaces

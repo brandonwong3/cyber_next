@@ -30,7 +30,7 @@ const QUESTION_1 = {
 
 const authenticationQuiz = {
 	title: 'Authentication',
-	categories: [CATEGORIES.AUTHENTICATION],	// Choose one or more from above constants to add to array
+	categories: [CATEGORIES.BROKEN_AUTHENTICATION],	// Choose one or more from above constants to add to array
 	difficulty: DIFFICULTY.EASY,				// Choose one from above constants
 	description: 'This quiz will test your knowledge about strong authentication practices.',
 	urlPath: 'authentication',					// This will be the url path to access this quiz (ex: /quiz/authentication); it cannot contain spaces

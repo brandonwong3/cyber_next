@@ -94,7 +94,7 @@ const LeftSideVerticalNavbar = ({filter, setFilter}) => {
 										})
 									}
 								}} />
-								<small className={"my-auto ml-1"}>{category}</small>
+								<small className={"my-auto ml-1 force-text-no-wrap"}>{category}</small>
 							</div>
 						)
 					})
