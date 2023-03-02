@@ -65,10 +65,10 @@ const LearnPage = () => {
 							</div>
 							<div className="dropdown-menu">
 									<ul>
-										<Link to="/practice/reading-authentication">
+										<Link to="/practice/reading-broken-auth">
 											<li>Read</li>
 										</Link>
-										<Link to="/practice/authentication">
+										<Link to="/practice/broken-auth">
 											<li>Example</li>
 										</Link>
 										<Link to="/quiz/authentication">
