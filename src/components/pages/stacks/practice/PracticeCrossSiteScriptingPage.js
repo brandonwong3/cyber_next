@@ -26,7 +26,7 @@ const PracticeCrossSiteScriptingPage = () => {
 			<p> An attacker can add an alert(1) within the script tags and have a pop-up come up every time this link is visited and control the user’s session with the application.</p>
 		</div>
 		<div className="btn-container">
- 				<Link to= "/practice/cross-site-scripting">
+ 				<Link to= "/quiz/cross-site-scripting">
 					 <button>Try It!</button>
 				 </Link>
 			</div>

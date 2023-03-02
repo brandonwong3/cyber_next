@@ -33,7 +33,7 @@ const PracticeBrokenAuthPage = () => {
 			<p>We can see that there are so many requests that all are having OK status, and when we clicked on Request no 441, we saw that the user id brute force was 10411. Its username is AndyPaul, and its default password was “PASSWORD.” Hence in this way, we can extract an ample number of User Accounts if the Broken Authentication Vulnerability exists in the Web Application.</p>
 		</div>
 		<div className="btn-container">
- 				<Link to= "/practice/broken-auth">
+ 				<Link to= "/quiz/authentication">
 					 <button>Try It!</button>
 				 </Link>
 			</div>

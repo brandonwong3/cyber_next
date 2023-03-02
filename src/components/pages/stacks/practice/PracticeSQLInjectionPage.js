@@ -28,7 +28,7 @@ const PracticeSQLInjectionPage= () => {
 			<li>because 1=1 is always true, all items will be returned by the query.</li>
 		</div>
 		<div className="btn-container">
- 				<Link to= "/practice/sql-injection-scripting">
+ 				<Link to= "/quiz/sql-injection">
 					 <button>Try It!</button>
 				 </Link>
 			</div>
