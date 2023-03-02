@@ -80,14 +80,20 @@ h1 {
   justify-content: center;
 }
 
+
 .learn-item:hover {
   transform: translateY(-5px);
 }
 
 .learn-item img {
-  width: 100%;
+  width: auto;
   height: auto;
+  max-height: 250px;
+  max-width: 250px;
+  display: block;
+  margin: auto;
   border-radius: 10px;
+  padding-bottom: 10px;
 }
 
 .learn-item-details {
