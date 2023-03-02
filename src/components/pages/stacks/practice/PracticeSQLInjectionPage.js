@@ -32,6 +32,9 @@ const PracticeSQLInjectionPage= () => {
 					 <button>Try It!</button>
 				 </Link>
 			</div>
+		<div className="ref-container">
+			<p>Reference: Portswigger</p>
+		</div>
 		</BaseTemplate>
 	);
 }

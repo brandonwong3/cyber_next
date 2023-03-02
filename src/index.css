@@ -192,7 +192,7 @@ button {
 	width: 1000px;
 	}
 
-/* Reading Broken Auth */
+/* Reading Pages */
 .broken-auth-desc, .risk-desc, .prevention-desc .SQL-injection-desc, .cross-site-scripting-desc {
 	margin-left: 0.5rem;
 }
@@ -218,7 +218,11 @@ button {
 	right: 40%;
 }
 
-/* Example Broken Auth */
+.btn-container {
+	padding-bottom: 1rem;
+}
+
+/* Example Pages */
 .img-container {
 	text-align: center;
 	padding-bottom: 1rem;
@@ -233,3 +237,19 @@ button {
     margin-left: 1rem;
 }
 
+.ref-container p {
+	position: absolute;
+	right: 0;
+	padding-right: 0.75rem;
+	bottom: -15rem;
+	font-size: small;
+}
+
+
+.reference-container p {
+	position: absolute;
+	right: 0;
+	padding-right: 0.75rem;
+	bottom: 3rem;
+	font-size: small;
+}
