@@ -70,10 +70,13 @@ body {
 }
 
 .caption {
-	margin-top: 10px;
-	font-size: 1rem;
-	text-align: center;
-	color: black;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: -1.75rem;
+    padding-left: 4rem;
 }
 
 .box img {
