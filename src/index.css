@@ -18,6 +18,9 @@ body {
 	padding: 20px;
 	font-size: large;
 }
+.homeDescr h1 {
+	font-size: 50px;
+}
 
 /* Learn About Container */
 .learn-container {
@@ -28,6 +31,7 @@ body {
 	padding: 12px;
 	text-align: center;
 	color: white;
+	font-size: 40px;
 	/* background-color: #1A4381; */
 }
 
