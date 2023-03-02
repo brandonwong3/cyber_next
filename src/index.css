@@ -169,3 +169,40 @@ button {
 	border-radius: 5px;
 	width: 1000px;
 	}
+
+/* Reading Broken Auth */
+.broken-auth-desc, .risk-desc, .prevention-desc {
+	margin-left: 0.5rem;
+}
+.broken-auth-desc li {
+	margin-left: 1rem;
+	padding-top: 0.25rem;
+}
+
+.prevention-desc li {
+	margin-left: 1rem;
+	padding-top: 0.25rem;
+}
+
+.btn-container button {
+	background-color: #D9D9D9;
+	text-align: center;
+	color: black;
+	font-size: 30px;
+	border-radius: 5px;
+	width: 300px;
+	position: absolute;
+	bottom: -300;
+	right: 40%;
+}
+
+/* Example Broken Auth */
+.text-container {
+	margin-left: 0.5rem;
+}
+
+.img-container {
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
