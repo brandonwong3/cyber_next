@@ -37,6 +37,7 @@ const ReadingBrokenAuthPage = () => {
 					<li> Be mindful of session length (log out of web applications to minimize vulnerability of sessions hijacking)</li>
 				</p>
 			</div>
+			{/* Link doesn't work rn */}
 			<div className="btn-container">
  				<Link to= "/practice/ExampleBrokenAuth">
 					 <button>Practice It!</button>

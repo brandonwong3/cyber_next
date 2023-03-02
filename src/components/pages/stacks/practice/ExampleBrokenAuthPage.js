@@ -6,7 +6,7 @@ const ExampleBrokenAuthPage = () => {
 	return (
 		<BaseTemplate>
 		<div className={"mx-auto flex justify-center flex-grow flex-1 align-center"}>
-			<h1>Example Broken Auth Page</h1>
+			<h1>Example Broken Authentication</h1>
 		</div>
 		<div className ="text-container">
 			<p> Someone may want to test login security by attempting to bypass authentication (username, password login) by exploiting a cookie. </p>
