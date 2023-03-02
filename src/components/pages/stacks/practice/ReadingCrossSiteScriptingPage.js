@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BaseTemplate from '../../../templates/BaseTemplate';
 
-
-// Need to work on Drop Downs
 const ReadingCrossSiteScriptingPage = () => {
 	return (
 		<BaseTemplate>
@@ -25,10 +23,8 @@ const ReadingCrossSiteScriptingPage = () => {
 				<p> As a general, never insert untrusted data anywhere, but if you must, HTML escape the data before putting it into the HTML element content. Moreover, encode data on output and use appropriate HTTP response headers so that browsers interpret data as text and not code.
 				</p>
 			</div>
-
-			{/* Link doesn't work rn */}
 			<div className="btn-container">
- 				<Link to= "/practice/ExampleCrossSiteScripting">
+ 				<Link to= "/practice/cross-site-scripting">
 					 <button>Practice It!</button>
 				 </Link>
 			</div>

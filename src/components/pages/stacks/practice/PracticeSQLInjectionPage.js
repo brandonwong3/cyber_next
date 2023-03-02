@@ -6,7 +6,7 @@ const PracticeSQLInjectionPage= () => {
 	return (
 		<BaseTemplate>
 		<div className={"mx-auto flex justify-center flex-grow flex-1 align-center"}>
-			<h1>Example SQL Injection</h1>
+			<h1> SQL Injection Example</h1>
 		</div>
 		<div className ="text-container">
 			<p> Consider an application that sells products from various different categories. When a user selects a category, such as Clothing, the browser requests the following <strong>URL</strong>:</p>

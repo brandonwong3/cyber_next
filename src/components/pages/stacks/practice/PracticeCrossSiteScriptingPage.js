@@ -6,7 +6,7 @@ const PracticeCrossSiteScriptingPage = () => {
 	return (
 		<BaseTemplate>
 		<div className={"mx-auto flex justify-center flex-grow flex-1 align-center"}>
-			<h1>Example Cross-Site Scripting</h1>
+			<h1> Cross-Site Scripting Example</h1>
 		</div>
 		<div className ="text-container">
 			<p> Given a website with the following <strong>URL</strong>: https://website.com/status?message=Hello+World.</p>

@@ -24,6 +24,9 @@ import ReadForStudentsPage from '../components/pages/stacks/read/ReadForStudents
 import ReadForBusinessPage from '../components/pages/stacks/read/ReadForBusinessPage';
 import ReadWhatsNextPage from '../components/pages/stacks/read/ReadWhatsNextPage';
 import QuizPage from '../components/pages/QuizPage';
+import ReadingSQLInjectionPage from '../components/pages/stacks/practice/ReadingSQLInjectionPage'
+import ReadingCrossSiteScriptingPage from '../components/pages/stacks/practice/ReadingCrossSiteScriptingPage'
+import ReadingBrokenAuthPage from '../components/pages/stacks/practice/ReadingBrokenAuthPage'
 
 // Test page
 import TestPage from '../components/pages/TestPage';
@@ -60,6 +63,9 @@ const RouterContainer = () => {
 					<AltSpecialRouter path={"/signup"} isAuthorizationRequired={false} component={SignupPage} exact={true} />
 					<AltSpecialRouter path={"/quiz/:quizUrlPath"} isAuthorizationRequired={false} component={QuizPage} exact={false} />
 					<AltSpecialRouter path={"/"} isAuthorizationRequired={false} component={IndexPage} exact={true} />
+					<AltSpecialRouter path={"/practice/reading-broken-auth"} isAuthorizationRequired={false} component={ReadingBrokenAuthPage} exact={true} />
+					<AltSpecialRouter path={"/practice/reading-cross-site-scripting"} isAuthorizationRequired={false} component={ReadingCrossSiteScriptingPage}  />
+					<AltSpecialRouter path={"/practice/reading-sql-injection"} isAuthorizationRequired={false} component={ReadingSQLInjectionPage} exact={true} />
 				</Switch>
 
 			</div>

@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BaseTemplate from '../../../templates/BaseTemplate';
 
-
-// Need to work on Drop Downs
 const ReadingSQLInjectionPage = () => {
 	return (
 		<BaseTemplate>
@@ -24,10 +22,8 @@ const ReadingSQLInjectionPage = () => {
 				<h2>How to Prevent Against SQL Injection:</h2>
 				<p> To remediate against SQL injection, it is important to use parameterized SQL queries and prepared statements so that way the database can distinguish what is code and what is data, regardless of the user input. With prepared statements, it ensures that an attacker cannot change the intent of a query, even if SQL commands are inserted. </p>
 			</div>
-
-			{/* Link doesn't work rn */}
 			<div className="btn-container">
- 				<Link to= "/practice/ExampleSQLInjection">
+ 				<Link to= "/practice/sql-injection">
 					 <button>Practice It!</button>
 				 </Link>
 			</div>

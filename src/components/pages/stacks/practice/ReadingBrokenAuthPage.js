@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BaseTemplate from '../../../templates/BaseTemplate';
 
-
-// Need to work on Drop Downs
 const ReadingBrokenAuthPage = () => {
 	return (
 		<BaseTemplate>
@@ -37,9 +35,8 @@ const ReadingBrokenAuthPage = () => {
 					<li> Be mindful of session length (log out of web applications to minimize vulnerability of sessions hijacking)</li>
 				</p>
 			</div>
-			{/* Link doesn't work rn */}
 			<div className="btn-container">
- 				<Link to= "/practice/ExampleBrokenAuth">
+ 				<Link to= "/practice/broken-auth">
 					 <button>Practice It!</button>
 				 </Link>
 			</div>

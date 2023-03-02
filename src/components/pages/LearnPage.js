@@ -1,7 +1,7 @@
 import React from "react";
 import BaseTemplate from '../templates/BaseTemplate';
 import '../pages/LearnPage.css';
-
+import { Link } from 'react-router-dom';
 
 const LearnPage = () => {
 	return (
@@ -29,9 +29,15 @@ const LearnPage = () => {
     				</div>
     				<div class="dropdown-menu">
 							<ul>
-								<li>Read</li>
-								<li>Example</li>
-								<li>Practice</li>
+								<Link to ="/practice/reading-sql-injection">
+									<li>Read</li>
+								</Link>
+								<Link to = "/practice/sql-injection">
+									<li>Example</li>
+								</Link>
+								<Link to = "/quiz/sql-injection">
+									<li>Practice</li>
+								</Link>
 							</ul>
     				</div>
   				</div>
