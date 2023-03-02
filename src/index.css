@@ -190,7 +190,7 @@ button {
 	}
 
 /* Reading Broken Auth */
-.broken-auth-desc, .risk-desc, .prevention-desc {
+.broken-auth-desc, .risk-desc, .prevention-desc .SQL-injection-desc, .cross-site-scripting-desc {
 	margin-left: 0.5rem;
 }
 .broken-auth-desc li {
@@ -216,12 +216,17 @@ button {
 }
 
 /* Example Broken Auth */
-.text-container {
-	margin-left: 0.5rem;
-}
-
 .img-container {
 	text-align: center;
 	padding-bottom: 1rem;
+}
+
+.image-container {
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.text-container li {
+    margin-left: 1rem;  
 }
 
