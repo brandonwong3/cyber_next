@@ -49,18 +49,22 @@ const IndexPage = () => {
 			</div>
 
 			{/* Statistics Container */}
-			<div style={{ display: 'flex' }}>
-				<div style={{ flex: 1 }}>
-					<img src="path/to/image1.jpg" alt="Image 1" />
-					<p>Caption 1</p>
+			<h2 className='stats-heading'>Why PenSec?</h2>
+			<div className="stats-container" style={{ display: 'flex' }}>
+				<div className='stats-box' style={{ flex: 1 }}>
+					<span>43%</span>
+					<p>of cyber attacks target small businesses.</p>
+					<p>- Symantec </p>
 				</div>
-				<div style={{ flex: 1 }}>
-					<img src="path/to/image2.jpg" alt="Image 2" />
-					<p>Caption 2</p>
+				<div className='stats-box' style={{ flex: 1 }}>
+					<span>$9.4 Million</span>
+					<p>was the average cost of a data breach in the US in 2022.</p>
+					<p>- IBM Data</p>
 				</div>
-				<div style={{ flex: 1 }}>
-					<span>3</span>
-					<p>Caption 3</p>
+				<div className='stats-box' style={{ flex: 1 }}>
+					<span>33%</span>
+					<p>expected cybersecurity job market growth.</p>
+					<p>- Bureau of Labor Statistics</p>
 				</div>
 			</div>
 
