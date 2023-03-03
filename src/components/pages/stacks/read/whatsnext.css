@@ -1,119 +1,117 @@
 .read-whats-next-page {
-    font-family: Arial, sans-serif;
-  }
-  
-  .read-whats-next-page-header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .read-whats-next-main-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .read-whats-next-resources-section {
-    flex-basis: 40%;
-  }
-  
-  .read-whats-next-news-section {
-    flex-basis: 55%;
-  }
-  
-  .read-whats-next-resources-dropdowns {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .read-whats-next-dropdown {
-    margin: 10px;
-    padding: 10px;
-    width: 90%;
-    max-width: 400px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .read-whats-next-dropdown h3 {
-    margin-top: 0;
-  }
-  
-  .read-whats-next-dropdown ul {
-    margin-top: 5px;
-    padding-left: 20px;
-  }
-  
-  .read-whats-next-dropdown ul li {
-    margin-bottom: 5px;
-  }
-  
-  .read-whats-next-news-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .read-whats-next-news-item {
-    margin: 10px;
-    padding: 10px;
-    width: calc(33.33% - 20px);
-    max-width: 400px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-  }
-  
-  .read-whats-next-news-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .read-whats-next-news-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .read-whats-next-news-item-details {
-    padding: 10px;
-  }
-  
-  .read-whats-next-news-item-date {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .read-whats-next-news-item-title {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .read-whats-next-news-item-link {
-    display: block;
-    margin-top: 10px;
-    color: #0066cc;
-  }
-  
-  .read-whats-next-button {
-    background-color: #0066cc;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .read-whats-next-button:hover {
-    transform: translateY(-2px);
-  }
-  
-  .read-whats-next-button a {
-    color: #fff;
-    text-decoration: none;
-  }
+  font-family: Arial, sans-serif;
+}
 
-  /**/
+.read-whats-next-page-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.read-whats-next-main-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.read-whats-next-resources-section {
+  flex-basis: 40%;
+}
+
+.read-whats-next-news-section {
+  flex-basis: 55%;
+}
+
+.read-whats-next-resources-dropdowns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.read-whats-next-dropdown {
+  margin: 10px;
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.read-whats-next-dropdown h3 {
+  margin-top: 0;
+}
+
+.read-whats-next-dropdown ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.read-whats-next-dropdown ul li {
+  margin-bottom: 5px;
+}
+
+.read-whats-next-news-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.read-whats-next-news-item {
+  margin: 10px;
+  padding: 10px;
+  width: calc(33.33% - 20px);
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.read-whats-next-news-item:hover {
+  transform: translateY(-5px);
+}
+
+.read-whats-next-news-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.read-whats-next-news-item-details {
+  padding: 10px;
+}
+
+.read-whats-next-news-item-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.read-whats-next-news-item-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.read-whats-next-news-item-link {
+  display: block;
+  margin-top: 10px;
+  color: #0066cc;
+}
+
+.read-whats-next-button {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.read-whats-next-button:hover {
+  transform: translateY(-2px);
+}
+
+.read-whats-next-button a {
+  color: #fff;
+  text-decoration: none;
+}
