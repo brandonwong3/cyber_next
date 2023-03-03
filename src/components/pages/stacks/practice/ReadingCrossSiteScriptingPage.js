@@ -25,7 +25,7 @@ const ReadingCrossSiteScriptingPage = () => {
 			</div>
 			<div className="btn-container">
  				<Link to= "/practice/cross-site-scripting">
-					 <button>Practice It!</button>
+					 <button>See an Example!</button>
 				 </Link>
 			</div>
 		</BaseTemplate>

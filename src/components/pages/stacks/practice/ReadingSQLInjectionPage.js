@@ -24,7 +24,7 @@ const ReadingSQLInjectionPage = () => {
 			</div>
 			<div className="btn-container">
  				<Link to= "/practice/sql-injection">
-					 <button>Practice It!</button>
+					 <button>See an Example!</button>
 				 </Link>
 			</div>
 		</BaseTemplate>

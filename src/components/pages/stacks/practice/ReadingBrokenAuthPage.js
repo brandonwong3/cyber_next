@@ -37,7 +37,7 @@ const ReadingBrokenAuthPage = () => {
 			</div>
 			<div className="btn-container">
  				<Link to= "/practice/broken-auth">
-					 <button>Practice It!</button>
+					 <button>See an Example!</button>
 				 </Link>
 			</div>
 		</BaseTemplate>
