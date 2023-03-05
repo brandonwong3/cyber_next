@@ -446,3 +446,20 @@ code {
 	white-space: nowrap;
 	display: flex;
 }
+
+.h-5 {
+	height: 1.25rem !important;
+}
+
+.w-5 {
+	width: 1.25rem !important;
+}
+
+.mw-20 {
+	max-width: 5rem !important;
+}
+
+
+.mw-30 {
+	max-width: 7.5rem !important;
+}

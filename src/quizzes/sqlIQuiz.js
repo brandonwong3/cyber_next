@@ -35,6 +35,7 @@ export const sqlIQuiz = {
 	urlPath: 'sql-injection',					// This will be the url path to access this quiz (ex: /quiz/authentication); it cannot contain spaces
 	questions: [
         QUESTION_1,
+		QUESTION_1
 	]
 };
 

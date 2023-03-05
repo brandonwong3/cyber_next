@@ -27,19 +27,69 @@ const HintExampleSection = ({hint = null, example = null}) => {
 
 const CorrectlyAnsweredQuestionLabel = ({text = 'Correctly Answered!'}) => {
 	return (
-		<small className={"text-center text-xs text-green font-bold"}>{text}<br/><br/></small>
+		<div className={"flex flex-row justify-center align-center"}>
+			<img src={"/images/green-checkmark.png"} alt={"Correctly Answered!"} className={"h-5 w-5 mr-2"}/>
+			<small className={"text-center text-xs text-green font-bold"}>{text}<br/><br/></small>
+		</div>
 	)
 }
 
 const ErrorText = ({errorText =  'Invalid Answer!'}) => {
 	return (
-		<small className={"text-center text-xs text-red font-bold"}>{errorText}<br/><br/></small>
+		<div className={"flex flex-row justify-center align-center"}>
+			<img src={"/images/red-x.png"} alt={"Incorrectly Answered!"} className={"h-5 w-5 mr-2"}/>
+			<small className={"text-center text-xs text-red font-bold"}>{errorText}<br/><br/></small>
+		</div>
 	)
 }
 
-const SubmitAnswerButton = ({submitCheckAnswer}) => {
+const NextButton = ({currentIndex, length, progressIndex, isEnabled = false}) => {
+
 	return (
-		<button className={"btn btn-primary btn-sm mx-auto mt-10 flex-grow"} onClick={submitCheckAnswer}>Submit</button>
+		<button disabled={!isEnabled} className={`btn btn-warning btn-sm mt-10 mw-20 flex-shrink ${!isEnabled && 'opacity-50 cursor-not-allowed'}`} onClick={() => {
+			if (currentIndex < length) {
+				progressIndex(currentIndex + 1);
+			} else {
+				console.log("End of quiz reached.")
+			}
+		}
+		}>Next</button>
+	)
+
+}
+
+const BackButton = ({currentIndex, progressIndex, isEnabled = true}) => {
+
+	return (
+		<button disabled={!isEnabled || currentIndex === 0} className={`btn btn-warning btn-sm mt-10 mw-20 flex-shrink ${!isEnabled && 'opacity-50 cursor-not-allowed'}`} onClick={() => {
+			if (currentIndex > 0) {
+				progressIndex(currentIndex - 1);
+			} else {
+				console.log("Beginning of quiz reached.")
+			}
+		}
+		}>Back</button>
+	)
+
+}
+
+const ProgressionButtons = ({currentIndex, length, progressIndex, answeredCorrectly = false}) => {
+	return (
+		<div className={"flex flex-row justify-center flex-shrink"}>
+			<BackButton currentIndex={currentIndex} progressIndex={progressIndex} />
+			<div className={"w-2"} />
+			<NextButton currentIndex={currentIndex} length={length} progressIndex={progressIndex} isEnabled={answeredCorrectly} />
+		</div>
+	)
+}
+
+const SubmitAnswerButton = ({submitCheckAnswer, shouldShow = true}) => {
+	if (!shouldShow) {
+		return null;
+	}
+
+	return (
+		<button className={"btn btn-primary btn-lg mt-10 mw-30 mx-auto"} onClick={submitCheckAnswer}>Submit</button>
 	)
 }
 
@@ -61,10 +111,11 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 				let allUserAnswers = Object.keys(multiSelectAnswers).filter(answer => multiSelectAnswers[answer] === true);
 
 				if (allTrueAnswers.length === allUserAnswers.length && allTrueAnswers.every(answer => allUserAnswers.includes(answer))) {
+					// Correct answer
 					validateAnswerCallback(true);
-					if (currentIndex < length) {
-						progressIndex(currentIndex + 1);
-					}
+					// if (currentIndex < length) {
+					// 	progressIndex(currentIndex + 1);
+					// }
 					setErrorText('');
 					setUserAnswer('');
 					setMultiSelectAnswers({});
@@ -74,10 +125,11 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 				break;
 			case QUESTION_TYPES.MULTIPLE_CHOICE || QUESTION_TYPES.TRUE_FALSE:
 				if (userAnswer === answers.map(answer => answer['isCorrect'] ? answer['text'] : null).filter(answer => answer !== null)[0]) {
+					// Correct answer
 					validateAnswerCallback(true);
-					if (currentIndex < length) {
-						progressIndex(currentIndex + 1);
-					}
+					// if (currentIndex < length) {
+					// 	progressIndex(currentIndex + 1);
+					// }
 					setErrorText('');
 					setUserAnswer('');
 					setMultiSelectAnswers({});
@@ -87,10 +139,11 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 				break;
 			case QUESTION_TYPES.TEXT:
 				if (userAnswer === answers[0]['text']) {
+					// Correct answer
 					validateAnswerCallback(true);
-					if (currentIndex < length) {
-						progressIndex(currentIndex + 1);
-					}
+					// if (currentIndex < length) {
+					// 	progressIndex(currentIndex + 1);
+					// }
 					setErrorText('');
 					setUserAnswer('');
 					setMultiSelectAnswers({});
@@ -142,7 +195,8 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 					}
 
 					<HintExampleSection hint={hint} example={example} />
-					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} />
+					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} shouldShow={!answeredCorrectly} />
+					<ProgressionButtons progressIndex={progressIndex} currentIndex={currentIndex} length={length} answeredCorrectly={answeredCorrectly} />
 				</div>
 			)
 		case QUESTION_TYPES.MULTIPLE_CHOICE:
@@ -165,7 +219,8 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 						)
 					})}
 					<HintExampleSection hint={hint} example={example} />
-					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} />
+					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} shouldShow={!answeredCorrectly} />
+					<ProgressionButtons progressIndex={progressIndex} currentIndex={currentIndex} length={length} answeredCorrectly={answeredCorrectly} />
 				</div>
 			);
 		case QUESTION_TYPES.TRUE_FALSE:
@@ -190,7 +245,8 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 						</label>
 					</div>
 					<HintExampleSection hint={hint} example={example} />
-					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} />
+					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} shouldShow={!answeredCorrectly} />
+					<ProgressionButtons progressIndex={progressIndex} currentIndex={currentIndex} length={length} answeredCorrectly={answeredCorrectly} />
 				</div>
 			);
 		case QUESTION_TYPES.TEXT:
@@ -204,7 +260,8 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 					}
 					<input placeholder={`Ex: ${example}`} onChange={(event) => setUserAnswer(event.target.value)} value={answeredCorrectly ? answers[0]['text'] : userAnswer} type={"text"} className={"border form-control border-gray-300 rounded p-2"} disabled={answeredCorrectly} />
 					<HintExampleSection hint={hint} example={example} />
-					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} />
+					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} shouldShow={!answeredCorrectly} />
+					<ProgressionButtons progressIndex={progressIndex} currentIndex={currentIndex} length={length} answeredCorrectly={answeredCorrectly} />
 				</div>
 			);
 		default:
