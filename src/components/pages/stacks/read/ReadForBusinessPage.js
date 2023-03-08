@@ -24,6 +24,18 @@ const ReadForBusinessPage = () => {
 									</a>
 									provides standards that will guide businesses of all sizes to understand and treat the majority of cyber risks, establishing a foundation to assess risks unique to your enterprise. .
 								</li>
+								<li className="business-li">
+									<strong>Offsite Back-ups</strong> A good business continuity plan includes keeping back ups of data separate from main network (cloud or different physical location).
+								</li>
+								<li className="business-li">
+									<strong>Technology Solutions:</strong> installing firewalls, anti-virus, anti-spyware, patching management.
+								</li>
+								<li className="business-li">
+									<strong>Business procedural polices: </strong> Changing password every 90 days, using two factor-authentication (2FA), annual cyber security training.
+								</li>
+								<li className="business-li">
+									<strong>Additional Laws & Regulations: </strong> complying with California Consumer Privacy Act (CCPA) and General Data Protection Regulation (GDPR).
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -38,6 +50,8 @@ const ReadForBusinessPage = () => {
 								<li className="business-li">
 									“There are two types of companies, those who have been hacked and those who do not know they have been targeted yet” - Cisco CEO John Chambers
 								</li>
+								<li className="business-li">
+									A small enterprise -cyber event can cascade against their relatively smaller technology architecture before they conjure an adequate response.								</li>
 								<li className="business-li">
 									Small businesses are subject to the same legal and regulatory requirements related to privacy/data protection. Inadequate security means non-compliance, leading to the company being vulnerable to penalties.
 								</li>
