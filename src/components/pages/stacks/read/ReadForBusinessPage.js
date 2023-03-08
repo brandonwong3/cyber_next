@@ -9,8 +9,8 @@ const ReadForBusinessPage = () => {
 			<div className="business-content">
 				<div className="Implement-quadrant1">
 					<div className="business-dropdown">
-						<button className="business-dropdown-button">How to Implement Cybersecurity</button>
-						<div className="business-dropdown-content">
+						<button tabindex="0" className="business-dropdown-button">How to Implement Cybersecurity</button>
+						<div tabindex="0" className="business-dropdown-content">
 							<ul className="business-ul">
 								<li className="business-li">
 									<strong>Cyber Insurance:</strong> This resource can be effective by
@@ -39,7 +39,7 @@ const ReadForBusinessPage = () => {
 									“There are two types of companies, those who have been hacked and those who do not know they have been targeted yet” - Cisco CEO John Chambers
 								</li>
 								<li className="business-li">
-								Small businesses are subject to the same legal and regulatory requirements related to privacy/data protection. Inadequate security means non-compliance, leading to the company being vulnerable to penalties. 
+									Small businesses are subject to the same legal and regulatory requirements related to privacy/data protection. Inadequate security means non-compliance, leading to the company being vulnerable to penalties.
 								</li>
 							</ul>
 						</div>

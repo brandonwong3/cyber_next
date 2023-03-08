@@ -89,9 +89,10 @@
     margin-top: 0.5rem;
   }
   
-  .business-dropdown:hover .business-dropdown-content {
-    display: block;
-  }
+  .business-dropdown:focus-within .business-dropdown-content,
+.business-dropdown-content:focus {
+  display: block;
+}
   
   .business-ul {
     display: flex;
