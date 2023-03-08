@@ -43,46 +43,6 @@ const ErrorText = ({errorText =  'Invalid Answer!'}) => {
 	)
 }
 
-const NextButton = ({currentIndex, length, progressIndex, isEnabled = false}) => {
-
-	return (
-		<button disabled={!isEnabled} className={`btn btn-warning btn-sm mt-10 mw-20 flex-shrink ${!isEnabled && 'opacity-50 cursor-not-allowed'}`} onClick={() => {
-			if (currentIndex < length) {
-				progressIndex(currentIndex + 1);
-			} else {
-				console.log("End of quiz reached.")
-			}
-		}
-		}>Next</button>
-	)
-
-}
-
-const BackButton = ({currentIndex, progressIndex, isEnabled = true}) => {
-
-	return (
-		<button disabled={!isEnabled || currentIndex === 0} className={`btn btn-warning btn-sm mt-10 mw-20 flex-shrink ${!isEnabled && 'opacity-50 cursor-not-allowed'}`} onClick={() => {
-			if (currentIndex > 0) {
-				progressIndex(currentIndex - 1);
-			} else {
-				console.log("Beginning of quiz reached.")
-			}
-		}
-		}>Back</button>
-	)
-
-}
-
-const ProgressionButtons = ({currentIndex, length, progressIndex, answeredCorrectly = false}) => {
-	return (
-		<div className={"flex flex-row justify-center flex-shrink"}>
-			<BackButton currentIndex={currentIndex} progressIndex={progressIndex} />
-			<div className={"w-2"} />
-			<NextButton currentIndex={currentIndex} length={length} progressIndex={progressIndex} isEnabled={answeredCorrectly} />
-		</div>
-	)
-}
-
 const SubmitAnswerButton = ({submitCheckAnswer, shouldShow = true}) => {
 	if (!shouldShow) {
 		return null;
@@ -93,7 +53,7 @@ const SubmitAnswerButton = ({submitCheckAnswer, shouldShow = true}) => {
 	)
 }
 
-const AnswerInput = ({type, answers = [], hint = null, example = null, answeredCorrectly = false, length, currentIndex, progressIndex, validateAnswerCallback}) => {
+const AnswerInput = ({type, answers = [], hint = null, example = null, answeredCorrectly = false, validateAnswerCallback}) => {
 
 	const [userAnswer, setUserAnswer] = React.useState('');
 
@@ -196,7 +156,6 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 
 					<HintExampleSection hint={hint} example={example} />
 					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} shouldShow={!answeredCorrectly} />
-					<ProgressionButtons progressIndex={progressIndex} currentIndex={currentIndex} length={length} answeredCorrectly={answeredCorrectly} />
 				</div>
 			)
 		case QUESTION_TYPES.MULTIPLE_CHOICE:
@@ -220,7 +179,6 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 					})}
 					<HintExampleSection hint={hint} example={example} />
 					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} shouldShow={!answeredCorrectly} />
-					<ProgressionButtons progressIndex={progressIndex} currentIndex={currentIndex} length={length} answeredCorrectly={answeredCorrectly} />
 				</div>
 			);
 		case QUESTION_TYPES.TRUE_FALSE:
@@ -246,7 +204,6 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 					</div>
 					<HintExampleSection hint={hint} example={example} />
 					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} shouldShow={!answeredCorrectly} />
-					<ProgressionButtons progressIndex={progressIndex} currentIndex={currentIndex} length={length} answeredCorrectly={answeredCorrectly} />
 				</div>
 			);
 		case QUESTION_TYPES.TEXT:
@@ -261,7 +218,6 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 					<input placeholder={`Ex: ${example}`} onChange={(event) => setUserAnswer(event.target.value)} value={answeredCorrectly ? answers[0]['text'] : userAnswer} type={"text"} className={"border form-control border-gray-300 rounded p-2"} disabled={answeredCorrectly} />
 					<HintExampleSection hint={hint} example={example} />
 					<SubmitAnswerButton submitCheckAnswer={submitCheckAnswer} shouldShow={!answeredCorrectly} />
-					<ProgressionButtons progressIndex={progressIndex} currentIndex={currentIndex} length={length} answeredCorrectly={answeredCorrectly} />
 				</div>
 			);
 		default:
@@ -271,7 +227,7 @@ const AnswerInput = ({type, answers = [], hint = null, example = null, answeredC
 };
 
 
-const QuizTemplate = ({question = 'What is the question?', questions = [], setQuestions, answeredCorrectly = false, hint = null, example = null, answers = [], type,  index, progressIndex}) => {
+const QuizTemplate = ({question = 'What is the question?', questions = [], setQuestions, answeredCorrectly = false, hint = null, example = null, answers = [], type,  index}) => {
 
 	const validateAnswerCallback = React.useCallback((answer) => {
 		const questionsData = [...questions];
@@ -282,7 +238,7 @@ const QuizTemplate = ({question = 'What is the question?', questions = [], setQu
 	return (
 		<div id={index} className={"mx-auto flex justify-center flex-grow flex-1 align-center"}>
 			<h5 className={'mb-2 font-bold'}>{question}</h5>
-			<AnswerInput type={type} answers={answers} hint={hint} example={example} answeredCorrectly={answeredCorrectly} length={questions.length} currentIndex={index} progressIndex={progressIndex} validateAnswerCallback={validateAnswerCallback} />
+			<AnswerInput type={type} answers={answers} hint={hint} example={example} answeredCorrectly={answeredCorrectly} validateAnswerCallback={validateAnswerCallback} />
 		</div>
 	);
 };
