@@ -73,31 +73,31 @@ const IndexPage = () => {
 			<div className='about-main-container'>
 				<div className="about-container">
 					<div className="about-box">
-						<img src="../images/Anokhi.jpg" alt="Team Member Anokhi Shah" />
+						<img src="/images/Anokhi.jpg" alt="Team Member Anokhi Shah" />
 						<p>Anokhi Shah</p>
 					</div>
 				</div>
 				<div className="about-container">
 					<div className="about-box">
-						<img src="../images/Bandhna.jpg" alt="Team Member Bandhna Bedi" />
+						<img src="/images/Bandhna.jpg" alt="Team Member Bandhna Bedi" />
 						<p>Bandhna Bedi</p>
 					</div>
 				</div>
 				<div className="about-container">
 					<div className="about-box">
-						<img src="../images/Tyrell.jpg" alt="Team Member Tyrell Garza" />
+						<img src="/images/Tyrell.jpg" alt="Team Member Tyrell Garza" />
 						<p>Tyrell Garza</p>
 					</div>
 				</div>
 				<div className="about-container">
 					<div className="about-box">
-						<img src="../images/Ishita.jpg" alt="Team Member Ishita Saxena" />
+						<img src="/images/Ishita.jpg" alt="Team Member Ishita Saxena" />
 						<p>Ishita Saxena</p>
 					</div>
 				</div>
 				<div className="about-container">
 					<div className="about-box">
-						<img src="../images/Brandon.jpg" alt="Team Member Brandon Wong" />
+						<img src="/images/Brandon.jpg" alt="Team Member Brandon Wong" />
 						<p>Brandon Wong</p>
 					</div>
 				</div>
