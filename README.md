@@ -1,6 +1,7 @@
 # CyberNext
 
 ## Notes:
+- Please refer to this [Stack Overflow](https://stackoverflow.com/a/48730272/5015219) answer for how to properly reference images from the `public` folder.
 - We are using **Version 5** of React Router. [Package](https://www.npmjs.com/package/react-router-dom/v/5.0.0)
     - Refer to [this documentation](https://v5.reactrouter.com/) for **V5**
 
