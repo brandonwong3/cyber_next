@@ -255,6 +255,10 @@ button {
 	font-size: small;
 }
 
-/* .background-image {
-        background-image: url('../public/images/background.jpeg');
-} */
+.nav-link {
+	font-size: 1.25rem;
+}
+
+.navbar-brand {
+	font-size: 1.5rem;
+}
