@@ -5,6 +5,7 @@ import BaseTemplate from '../templates/BaseTemplate';
 const IndexPage = () => {
 	return (
 		<BaseTemplate>
+		<div className = "background-image">
 			<div className={"mx-auto flex justify-center flex-grow flex-1 align-center"}>
 				<div className='homeDescr'>
 					<h1>Welcome to PenSec!</h1>
@@ -108,6 +109,7 @@ const IndexPage = () => {
 				<Link to="/Login">
 					<button>Get Started! Signup or Login Today →</button>
 				</Link>
+			</div>
 			</div>
 
 		</BaseTemplate>

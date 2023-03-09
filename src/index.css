@@ -5,6 +5,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-image: url('../public/images/background.jpeg');
 }
 
 /* Home Page Styling */
@@ -253,3 +254,7 @@ button {
 	bottom: 3rem;
 	font-size: small;
 }
+
+/* .background-image {
+        background-image: url('../public/images/background.jpeg');
+} */
