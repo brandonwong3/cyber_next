@@ -208,7 +208,7 @@ button {
 }
 
 .btn-container button {
-	background-color: #D9D9D9;
+	background-color: #C0C0C0;
 	text-align: center;
 	color: black;
 	font-size: 30px;
@@ -242,7 +242,7 @@ button {
 	position: absolute;
 	right: 0;
 	padding-right: 0.75rem;
-	bottom: -15rem;
+	bottom: -32rem;
 	font-size: small;
 }
 
@@ -251,7 +251,7 @@ button {
 	position: absolute;
 	right: 0;
 	padding-right: 0.75rem;
-	bottom: 3rem;
+	bottom: -3.5rem;
 	font-size: small;
 }
 
