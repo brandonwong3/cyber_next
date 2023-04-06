@@ -63,11 +63,11 @@ body {
 	right: 0;
 	bottom: 20px;
 	overflow: hidden;
-	border: 1px solid #727C80;
+	border: 1px solid #EDEAEA;
 	border-radius: 10px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 	align-items: center;
-	background-color: #727C80;
+	background-color: #EDEAEA;
 }
 
 .caption {
@@ -183,7 +183,7 @@ body {
 }
 
 button {
-	background-color: #94DADE;
+	background-color: #727C80;
 	color: white;
 	font-size: 40px;
 	font-weight: bold;
