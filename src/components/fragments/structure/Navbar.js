@@ -55,7 +55,7 @@ const NavDropdownSection = () => {
 						<ul className="dropdown-menu" aria-labelledby="read-dropdown-menu-link">
 							<li><Link className="dropdown-item" to={"/read/for-business"}>For Business</Link></li>
 							<li><Link className="dropdown-item" to={"/read/for-students"}>For Students</Link></li>
-							<li><Link className="dropdown-item" to={"/read/whats-next"}>What's Next</Link></li>
+							<li><Link className="dropdown-item" to={"/read/whats-next"}>What's Next?</Link></li>
 						</ul>
 					</li>
 				</ul>

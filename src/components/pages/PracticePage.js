@@ -133,7 +133,7 @@ const PracticePage = () => {
 
 	return (
 		<BaseTemplate>
-			<h1 className={"text-center mt-4"}>Practice Page</h1>
+			<h1 className={"text-center mt-4"}>Practice your Skills</h1>
 			<div className={"flex-grow flex-1"}>
 
 				<div className={'flex flex-row'}>
