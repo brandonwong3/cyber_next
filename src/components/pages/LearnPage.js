@@ -8,7 +8,7 @@ const LearnPage = () => {
 		<BaseTemplate>
 			<div className="learn-page">
 				<div className={"mx-auto flex justify-center flex-grow flex-1 align-center"}>
-					<h1>Learn Page</h1>
+					<h1>Learn All About Vulnerabilities</h1>
 				</div>
 
 				<div className="learn-section">

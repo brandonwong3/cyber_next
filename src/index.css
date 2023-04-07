@@ -1,8 +1,6 @@
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
+	font-family: andale mono, monospace;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-image: url('../public/images/background.jpeg');
@@ -19,6 +17,7 @@ body {
 	padding: 20px;
 	font-size: large;
 }
+
 .homeDescr h1 {
 	font-size: 50px;
 }
@@ -70,14 +69,19 @@ body {
 	background-color: #EDEAEA;
 }
 
+.box:hover {
+	background-color: #c6c5c5;
+	transform: translateY(-5px);
+}
+
 .caption {
-    margin-top: 10px;
-    font-size: 1rem;
-    text-align: center;
-    color: white;
-    position: absolute;
-    bottom: -1.75rem;
-    padding-left: 4rem;
+	margin-top: 10px;
+	font-size: 1rem;
+	text-align: center;
+	color: white;
+	position: absolute;
+	bottom: -1.75rem;
+	padding-left: 4rem;
 }
 
 .box img {
@@ -191,12 +195,21 @@ button {
 	padding: 30px 30px;
 	border-radius: 5px;
 	width: 1000px;
-	}
+}
+
+button:hover {
+	background-color: #393f42;
+	transform: translateY(-5px);
+}
 
 /* Reading Pages */
-.broken-auth-desc, .risk-desc, .prevention-desc .SQL-injection-desc, .cross-site-scripting-desc {
+.broken-auth-desc,
+.risk-desc,
+.prevention-desc .SQL-injection-desc,
+.cross-site-scripting-desc {
 	margin-left: 0.5rem;
 }
+
 .broken-auth-desc li {
 	margin-left: 1rem;
 	padding-top: 0.25rem;
@@ -230,12 +243,12 @@ button {
 }
 
 .image-container {
-    padding-bottom: 1rem;
-    padding-left: 1.5rem;
+	padding-bottom: 1rem;
+	padding-left: 1.5rem;
 }
 
 .text-container li {
-    margin-left: 1rem;
+	margin-left: 1rem;
 }
 
 .ref-container p {

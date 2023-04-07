@@ -17,7 +17,7 @@ const ReadWhatsNextPage = () => {
 			</div>
 			<div className="read-whats-next-content">
 				<div className="read-whats-next-page-header">
-					<h1>What's Next...</h1>
+					<h1>What's Next?</h1>
 				</div>
 
 				<div className="read-whats-next-main-section">
