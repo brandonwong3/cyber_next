@@ -1,5 +1,6 @@
 .read-whats-next-page {
   font-family: Arial, sans-serif;
+  position: relative;
 }
 
 .read-whats-next-page-header {
@@ -15,6 +16,14 @@
 
 .read-whats-next-resources-section {
   flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.read-whats-next-resources-section h2 {
+  text-align: center;
+  width: 100%;
 }
 
 .read-whats-next-news-section {
@@ -50,6 +59,7 @@
   margin: 0;
   padding: 10px 0;
   color: #080909;
+  font-size: 20px;
 }
 
 .student-dropdown-button:hover {
@@ -117,4 +127,40 @@
   display: block;
   margin-top: 10px;
   color: #0066cc;
+}
+
+.logo-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-logo {
+  position: absolute;
+  animation: bounce 14s infinite;
+  width: 100px;
+  opacity: 0.1;
+
+}
+
+@keyframes bounce {
+  0%, 100% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 100px);
+  }
+  50% {
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+  }
+  75% {
+    top: calc(100% - 100px);
+    left: 0;
+  }
 }

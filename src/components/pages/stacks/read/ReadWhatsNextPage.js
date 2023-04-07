@@ -8,7 +8,14 @@ const ReadWhatsNextPage = () => {
 
 	return (
 		<div className="read-whats-next-page">
-			<div className="read-whats-next-content"> 
+			<div className="logo-background">
+				<img
+					src="https://cdn-icons-png.flaticon.com/512/108/108181.png"
+					alt="Website Logo"
+					className="background-logo"
+				/>
+			</div>
+			<div className="read-whats-next-content">
 				<div className="read-whats-next-page-header">
 					<h1>What's Next...</h1>
 				</div>

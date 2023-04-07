@@ -8,7 +8,7 @@ const ReadForBusinessPage = () => {
 
 			<div className="business-content">
 				<div className="business-section">
-					<div className="business-dropdowns-container">
+					<div className="business-dropdowns-container blue-rectangle">
 
 						<div className="business-dropdown">
 							<button className="business-dropdown-button">How to Implement Cybersecurity</button>
@@ -43,7 +43,7 @@ const ReadForBusinessPage = () => {
 						</div>
 					</div>
 
-					<div className="business-dropdown">
+					<div className="business-dropdown blue-rectangle">
 						<button className="business-dropdown-button">Reasons to Implement Cybersecurity</button>
 						<div className="business-dropdown-content">
 							<ul className="business-ul">
@@ -65,7 +65,7 @@ const ReadForBusinessPage = () => {
 				</div>
 
 				<div className="video-section">
-                    <div className="business-video-container">
+                    <div className="business-video-container blue-rectangle">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/kGPCUvZZ6FM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <h2 className="video-title">Cybersecurity for Small Business</h2>
                     </div>
@@ -74,7 +74,7 @@ const ReadForBusinessPage = () => {
 			</div>
 
 
-			<div className="business-image">
+			<div className="business-image gray-box">
 				<img className="business-img" src="../images/business_stat.png" alt="business security stats" />
 			</div>
 		</div>
