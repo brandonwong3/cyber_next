@@ -22,9 +22,9 @@ const ReadForBusinessPage = () => {
 									</li>
 									<li className="business-li">
 										<a href="https://www.nist.gov/itl/smallbusinesscyber/planning-guides/nist-cybersecurity-framework">
-											The NIST Cybersecurity Framework
+											The NIST Cybersecurity Framework 
 										</a>
-										provides standards that will guide businesses of all sizes to understand and treat the majority of cyber risks, establishing a foundation to assess risks unique to your enterprise. .
+										&nbsp;provides standards that will guide businesses of all sizes to understand and treat the majority of cyber risks, establishing a foundation to assess risks unique to your enterprise. .
 									</li>
 									<li className="business-li">
 										<strong>Offsite Back-ups</strong> A good business continuity plan includes keeping back ups of data separate from main network (cloud or different physical location).
