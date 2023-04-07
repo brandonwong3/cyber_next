@@ -8,9 +8,9 @@ const ReadForBusinessPage = () => {
 
 			<div className="business-content">
 				<div className="business-section">
-					<div className="business-dropdowns-container blue-rectangle">
+					<div className="business-dropdowns-container">
 
-						<div className="business-dropdown">
+						<div className="business-dropdown blue-rectangle">
 							<button className="business-dropdown-button">How to Implement Cybersecurity</button>
 							<div className="business-dropdown-content">
 								<ul className="business-ul">

@@ -1,3 +1,8 @@
+.business-container {
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
 .business-body {
   margin: 0;
   padding: 0;
@@ -94,7 +99,7 @@
   background-color: #1A4381;
   color: #f0f3f7;
   font-size: 1.2rem;
-  padding: 1rem;
+  padding:1rem;
   border-radius: 500px;
   border: none;
   cursor: pointer;
@@ -183,12 +188,12 @@
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #ffffff;
+  border-top: 5px solid #080000;
   transform: translateY(-50%);
 }
 .business-dropdown-button {
-  background-color: #797878;
-  color: #f9fbfe;
+  background-color: #c6c1c1;
+  color: #000205;
   font-size: 1.2rem;
   padding: 0.5rem;
   border-radius: 15px;
