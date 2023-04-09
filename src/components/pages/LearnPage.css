@@ -158,8 +158,26 @@ h1 {
   z-index: 1;
 }
 
+.dropdown-menu a:link {
+  color: blue;
+}
+
+.dropdown-menu a:visited {
+  color: black;
+}
+
+/* .dropdown-menu ul {list-style: none}
+
+.dropdown-menu li::before {content: "•"; color:white;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+ */
+
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+.bottom {
+ background-color: #6666667e;
+}
 /**/
