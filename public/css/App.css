@@ -514,3 +514,19 @@ code {
 .flip-over-card-back {
 	background-color: #ccc6c6 !important;
 }
+
+
+.flip-over-card-holder {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90%;
+}
+
+.w-10 {
+	width: 2.5rem !important;
+}
+
+.control-button {
+	height: 50% !important;
+	width: 50% !important;
+}
