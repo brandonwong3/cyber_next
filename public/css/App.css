@@ -300,10 +300,10 @@ body {
 	background-color: #727C80;
 }
 
-#app {
-	/*height: 100%;*/
-	/*width: 100%;*/
-}
+/* #app {
+	height: 100%;
+	width: 100%;
+} */
 
 .remove-bootstrap-inline-text-input-icon-styling {
 	border-radius: 0 !important;

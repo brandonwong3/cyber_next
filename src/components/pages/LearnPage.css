@@ -97,6 +97,10 @@ h1 {
   transform: translateY(-5px);
 }
 
+.learn-item:nth-child(-n + 3):hover {
+  background-color: #1a4381c5;
+}
+
 .learn-item img {
   width: auto;
   height: auto;
