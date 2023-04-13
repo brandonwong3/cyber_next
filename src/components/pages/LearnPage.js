@@ -79,21 +79,21 @@ const LearnPage = () => {
 							</div>
 						</div>
 
-						<div className="learn-item">
+						<div className="learn-item bottom">
 							<div className="learn-item-details">
 							<img className='icon' src='https://bounty.github.com/images/badges/A8-1.png' alt='shield with a disguise face.' />
 								<div className="learn-item-title">Cross Site Request Forgery</div>
 							</div>
 						</div>
 
-						<div className="learn-item">
+						<div className="learn-item bottom">
 							<div className="learn-item-details">
 							<img className='icon' src='https://owasp.org/Top10/assets/TOP_10_Icons_Final_SSRF.png' alt='man with an official guard hat and arrows pointing at him and past him' />
 								<div className="learn-item-title">Server Side Request Forgery</div>
 							</div>
 						</div>
 
-						<div className="learn-item">
+						<div className="learn-item bottom">
 							<div className="learn-item-details">
 							<img className='icon' src='https://www.clickcease.com/blog/wp-content/uploads/2020/09/Untitled-design.png' alt='slightly transparent website with mouse over it and a skull in the background.' />
 								<div className="learn-item-title">Clickjacking</div>
