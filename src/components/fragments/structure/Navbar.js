@@ -20,7 +20,7 @@ const Navbar = () => {
 		<nav className="navbar navbar-expand-sm navbar-light bg-pastel-green w-full flex flex-grow flex-row">
 			<div className="container-fluid w-full flex flex-grow flex-row justify-between">
 				<div className={"flex flex-row justify-start items-center"}>
-					<img alt={"Navbar Brand"} src={"https://cdn-icons-png.flaticon.com/512/108/108181.png"} height={20} width={20} className={"w-10 h-10 mr-1"} />
+					<img alt={"Navbar Brand"} src={"https://cdn-icons-png.flaticon.com/512/108/108181.png"} height={20} width={20} className={"mr-1"} />
 					<Link to={"/"} className="navbar-brand text-white font-bold font-italic"><u>PenSec</u></Link>
 				</div>
 

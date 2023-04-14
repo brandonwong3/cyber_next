@@ -12,7 +12,8 @@ const FlipOverCard = ({question, answer, props}) => {
 				<h1 className={"text-center font-bold text-lg-center"}>{question}</h1>
 			</div>
 			<div key="back" onClick={() => setShowQuestion(!showQuestion)}>
-				<p className={"text-center font-semibold"}>{answer}</p>
+				{/*<p className={"text-center font-semibold"}>{answer}</p>*/}
+				<div className={"font-semibold"} dangerouslySetInnerHTML={{__html: answer}}/>
 			</div>
 		</ReactCardFlip>
 	)

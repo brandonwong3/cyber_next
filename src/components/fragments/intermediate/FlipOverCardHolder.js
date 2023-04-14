@@ -6,11 +6,22 @@ import '../../../style/flip-card-style.css';
 const LESSON_DATA = [
 	{
 		question: 'What is SQL Injection?',
-		answer: 'SQL injection is a vulnerability that can allow an attacker to interfere with the queries an application makes to the database and allow an attacker to view data that aren\'t authorized or traditionally able to view/retrieve. This is done by placing malicious SQL queries in the web page input. There is also the potential for an attacker to modify or delete the data, which can change the behavior or content of the application. Moreover, this vulnerability has the potential to allow an attacker to perform a denial of service attack or compromise the underlying server. SQL injection is detrimental to a business as an attacker can view sensitive data that may belong to other users of the application or any data being stored, such as passwords and credit card information. SQL injection has the potential to destroy your database and execute admin operations on the database.'
+		answer: '&#8226; SQL injection is a vulnerability that can allow an attacker to interfere with the queries an application makes to the database and allow an attacker to view data that aren\'t authorized or traditionally able to view/retrieve.<br/>' +
+			'&#8226; This is done by placing malicious SQL queries in the web page input. There is also the potential for an attacker to modify or delete the data, which can change the behavior or content of the application.<br/> ' +
+			'&#8226; Moreover, this vulnerability has the potential to allow an attacker to perform a denial of service attack or compromise the underlying server.<br/> ' +
+			'&#8226; SQL injection is detrimental to a business as an attacker can view sensitive data that may belong to other users of the application or any data being stored, such as passwords and credit card information.<br/>' +
+			'&#8226; SQL injection has the potential to destroy your database and execute admin operations on the database.'
+	},
+	{
+		question: 'Types of SQL Injection',
+		answer: 'Hello World',
 	},
 	{
 		question: 'Risk Analysis',
-		answer: 'SQL injection is a severe vulnerability because of the damage it can do. It can result in sensitive data exposure such as passwords, credit card details, and personal information, and alter the data in the database or the entire database itself. An attacker can drop tables, add new data, impersonate as the database administrator, or even access the operating system and attack the internal network. Due to the extent of what can be stolen with SQL injection, it is considered a severe vulnerability.'
+		answer: '&#8226; SQL injection is a severe vulnerability because of the damage it can do.<br/> ' +
+			'&#8226; It can result in sensitive data exposure such as passwords, credit card details, and personal information, and alter the data in the database or the entire database itself.<br/> ' +
+			'&#8226; An attacker can drop tables, add new data, impersonate as the database administrator, or even access the operating system and attack the internal network.<br/> ' +
+			'&#8226; Due to the extent of what can be stolen with SQL injection, it is considered a severe vulnerability.'
 	}
 ];
 
