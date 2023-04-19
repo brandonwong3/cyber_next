@@ -8,14 +8,14 @@ const DATA = [
 	{
 		question: () => <div>
 			<div className ="text-container">
-			<p> Given a website with the following <strong>URL</strong>: https://website.com/status?message=Hello+World.</p>
+				<p> Given a website with the following <strong>URL</strong>: https://website.com/status?message=Hello+World.</p>
 
-		</div>
+			</div>
 		</div>,
 		answer: () => <div>
 			<div className ="image-container">
-			<img src="/../../../../images/XSS-link.png" alt="text display"></img>
-		</div>
+				<img src="/../../../../images/XSS-link.png" alt="text display"></img>
+			</div>
 		</div>
 	},
 	{
@@ -27,22 +27,28 @@ const DATA = [
 	},
 	{
 		question: () => <div>
-		<div className = "image-container">
-			<img src="/../../../../images/bad-link.png" alt="example of malicious link"></img>
-		</div>
-		<div className ="text-container">
-			<p> An attacker can add an alert(1) within the script tags and have a pop-up come up every time this link is visited and control the user’s session with the application.</p>
-		</div>
-		</div> ,
-		answer: () => <div className={"flex justify-center items-center"}>
+			<div className="image-container">
+				<img src="/../../../../images/bad-link.png" alt="example of malicious link"></img>
+			</div>
 
- 			<Link to= "/quiz/cross-site-scripting" className={"flex flex-shrink mx-auto"}>
-				 <button>Try It!</button>
+		</div>,
+		answer: () =>
+			<div className="text-container">
+				<p> An attacker can add an alert(1) within the script tags and have a pop-up come up every time this link is visited and control the user’s session with the application.</p>
+			</div>
+
+
+	},
+	{
+		question: () => <div className={"flex justify-center items-center"}>
+
+			<Link to= "/quiz/cross-site-scripting" className={"flex flex-shrink mx-auto"}>
+				<button>Try It!</button>
 			</Link>
 
-
+		</div>,
+		answer: () => <div className={"flex justify-center items-center"}>
 			<p>Reference: Portswigger</p>
-
 		</div>
 	}
 ]
@@ -51,9 +57,9 @@ const DATA = [
 const PracticeCrossSiteScriptingPage = () => {
 	return (
 		<BaseTemplate>
-		<div className={"mx-auto flex justify-center flex-grow flex-1 align-center"}>
-			<h1> Cross-Site Scripting Example</h1>
-		</div>
+			<div className={"mx-auto flex justify-center flex-grow flex-1 align-center"}>
+				<h1> Cross-Site Scripting Example</h1>
+			</div>
 
 			<NoAnimationFlipOverCardHolder data={DATA} />
 

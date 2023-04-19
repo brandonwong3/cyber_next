@@ -22,7 +22,7 @@ const ReadForBusinessPage = () => {
 									</li>
 									<li className="business-li">
 										<a href="https://www.nist.gov/itl/smallbusinesscyber/planning-guides/nist-cybersecurity-framework">
-											The NIST Cybersecurity Framework 
+											The NIST Cybersecurity Framework
 										</a>
 										&nbsp;provides standards that will guide businesses of all sizes to understand and treat the majority of cyber risks, establishing a foundation to assess risks unique to your enterprise. .
 									</li>
@@ -66,7 +66,7 @@ const ReadForBusinessPage = () => {
 
 				<div className="video-section">
                     <div className="business-video-container blue-rectangle">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kGPCUvZZ6FM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kGPCUvZZ6FM" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                         <h2 className="video-title">Cybersecurity for Small Business</h2>
                     </div>
                 </div>
