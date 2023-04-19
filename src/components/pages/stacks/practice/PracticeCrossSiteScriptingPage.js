@@ -43,7 +43,7 @@ const DATA = [
 		question: () => <div className={"flex justify-center items-center"}>
 
 			<Link to= "/quiz/cross-site-scripting" className={"flex flex-shrink mx-auto"}>
-				<button>Try It!</button>
+				<button className={"small-button"}>Try It!</button>
 			</Link>
 
 		</div>,

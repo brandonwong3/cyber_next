@@ -43,7 +43,7 @@ const LESSON = [
 	{
 		question: () => <div className="flex justify-center items-center">
  				<Link to="/quiz/sql-injection" className={"flex flex-shrink mx-auto"}>
-					 <button>Try It!</button>
+					 <button className={"small-button"}>Try It!</button>
 				 </Link>
 			</div>,
 		answer: () => <div className="flex justify-center items-center">

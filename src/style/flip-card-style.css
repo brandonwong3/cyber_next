@@ -4,5 +4,8 @@ button {
     flex-shrink: 1;
     padding: 1rem !important;
     margin: 0.5rem !important;
+}
 
+button.small-button {
+    width: revert;
 }

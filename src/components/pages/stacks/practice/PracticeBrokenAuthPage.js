@@ -38,14 +38,14 @@ const LESSON = [
 		</div></div>
 	},
 	{
-		question: () => <div className="btn-container">
+		question: () => <div className="flex justify-center items-center">
  				<Link to= "/quiz/authentication">
-					 <button>Try It!</button>
+					 <button className={"small-button"} >Try It!</button>
 				 </Link>
 			</div>,
-		answer: () => <div className="btn-container">
+		answer: () => <div className="flex justify-center items-center">
  				<Link to= "/quiz/authentication">
-					 <button>Try It!</button>
+					 <button className={"small-button"}>Try It!</button>
 				 </Link>
 			</div>
 	}
