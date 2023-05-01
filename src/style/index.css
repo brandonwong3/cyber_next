@@ -103,7 +103,7 @@ body {
 	text-align: center;
 	background-color: #1a4381c5;
 	padding: 20px;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .stats-box {
@@ -130,8 +130,9 @@ body {
 .about-container {
 	position: relative;
 	width: 200px;
-	height: 250px;
+	height: 300px;
 	margin-right: 10px;
+/*	Hide all extended content */
 }
 
 .about-box {
@@ -151,10 +152,22 @@ body {
 	width: 100%;
 	height: auto;
 	margin: auto;
+	object-fit: cover;
 	/* centers the image */
 }
 
-.about-box p {
+/*.about-box p {*/
+/*	position: absolute;*/
+/*	bottom: 0;*/
+/*	left: 0;*/
+/*	right: 0;*/
+/*	margin: 0;*/
+/*	padding: 10px;*/
+/*	background-color: white;*/
+/*	text-align: center;*/
+/*}*/
+
+.about-box-text-holder {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -164,6 +177,18 @@ body {
 	background-color: white;
 	text-align: center;
 }
+
+/*.about-box a {*/
+/*	position: absolute;*/
+/*	bottom: -3rem;*/
+/*	left: 0;*/
+/*	right: 0;*/
+/*	margin: 0;*/
+/*	padding: 10px;*/
+/*	background-color: white;*/
+/*	text-align: center;*/
+/*	z-index: 100;*/
+/*}*/
 
 .about-main-container {
 	display: flex;
@@ -228,7 +253,7 @@ button:hover {
 	border-radius: 5px;
 	width: 300px;
 	position: absolute;
-	bottom: -300;
+	bottom: -300px;
 	right: 40%;
 }
 
@@ -274,4 +299,14 @@ button:hover {
 
 .navbar-brand {
 	font-size: 1.5rem;
+}
+
+.force-visible-link {
+	z-index: 100;
+	position: absolute;
+	bottom: 1rem;
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
