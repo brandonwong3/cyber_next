@@ -88,6 +88,8 @@ const IndexPage = () => {
 					<div className="about-box">
 						<img src="/images/Tyrell.jpg" alt="Team Member Tyrell Garza" />
 						<p>Tyrell Garza</p>
+						<br />
+            tyrellgarza@outlook.com
 					</div>
 				</div>
 				<div className="about-container">
