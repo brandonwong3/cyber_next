@@ -239,6 +239,15 @@ button:hover {
 	padding-bottom: 1rem;
 }
 
+footer {
+	background-color: #727C80;
+	color: white;
+}
+footer p {
+	text-align: center;
+	font-size: 20px;
+}
+
 /* Example Pages */
 .img-container {
 	text-align: center;
