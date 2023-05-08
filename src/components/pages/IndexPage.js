@@ -55,17 +55,17 @@ const IndexPage = () => {
 				<div className='stats-box' style={{ flex: 1 }}>
 					<span>43%</span>
 					<p>of cyber attacks target small businesses.</p>
-					<p>- Symantec </p>
+					<p><a href="https://www.forbes.com/sites/chuckbrooks/2022/01/21/cybersecurity-in-2022--a-fresh-look-at-some-very-alarming-stats/?sh=365e7a9f6b61">- Accenture </a></p>
 				</div>
 				<div className='stats-box' style={{ flex: 1 }}>
 					<span>$9.4 Million</span>
 					<p>was the average cost of a data breach in the US in 2022.</p>
-					<p>- IBM Data</p>
+					<p><a href="https://www.ibm.com/downloads/cas/3R8N1DZJ">- IBM Data</a></p>
 				</div>
 				<div className='stats-box' style={{ flex: 1 }}>
-					<span>33%</span>
+					<span>35%</span>
 					<p>expected cybersecurity job market growth.</p>
-					<p>- Bureau of Labor Statistics</p>
+					<p><a href="https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm">- Bureau of Labor Statistics</a></p>
 				</div>
 			</div>
 
@@ -82,6 +82,7 @@ const IndexPage = () => {
 					<div className="about-box">
 						<img src="/images/Bandhna.jpg" alt="Team Member Bandhna Bedi" />
 						<p>Bandhna Bedi</p>
+						
 					</div>
 				</div>
 				<div className="about-container">
@@ -109,10 +110,14 @@ const IndexPage = () => {
 			{/* Button on Bottom Page (Login/Signup) */}
 			<div className="button-container">
 				<Link to="/Login">
-					<button>Get Started! Signup or Login Today →</button>
+					<button>Get Started! Sign up or Login Today →</button>
 				</Link>
 			</div>
 			</div>
+
+		<div className="footer-container">
+				<p>This website will shutdown on June 5th, 2023.</p>
+		</div>
 
 		</BaseTemplate>
 

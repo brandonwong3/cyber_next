@@ -115,6 +115,9 @@ body {
 .stats-box p {
 	font-size: 1rem;
 }
+.stats-box a {
+	color: white;
+}
 
 /* About the Team Styling for Home Page */
 .about-heading {
