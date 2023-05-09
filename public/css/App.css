@@ -255,10 +255,6 @@ body {
 	font-weight: 700;
 }
 
-.font-italic {
-	font-style: italic;
-}
-
 .remove-text-decoration {
 	text-decoration: none !important;
 }
