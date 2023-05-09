@@ -78,28 +78,6 @@ const LearnPage = () => {
 								</div>
 							</div>
 						</div>
-
-						<div className="learn-item bottom">
-							<div className="learn-item-details">
-							<img className='icon' src='https://bounty.github.com/images/badges/A8-1.png' alt='shield with a disguise face.' />
-								<div className="learn-item-title">Cross Site Request Forgery</div>
-							</div>
-						</div>
-
-						<div className="learn-item bottom">
-							<div className="learn-item-details">
-							<img className='icon' src='https://owasp.org/Top10/assets/TOP_10_Icons_Final_SSRF.png' alt='man with an official guard hat and arrows pointing at him and past him' />
-								<div className="learn-item-title">Server Side Request Forgery</div>
-							</div>
-						</div>
-
-						<div className="learn-item bottom">
-							<div className="learn-item-details">
-							<img className='icon' src='https://www.clickcease.com/blog/wp-content/uploads/2020/09/Untitled-design.png' alt='slightly transparent website with mouse over it and a skull in the background.' />
-								<div className="learn-item-title">Clickjacking</div>
-							</div>
-						</div>
-
 					</div>
 				</div>
 			</div>
@@ -107,19 +85,4 @@ const LearnPage = () => {
 	);
 
 }
-
-
 export default LearnPage;
-
-// const learnItem = document.querySelector('.learn-item');
-// learnItem.addEventListener('click', function() {
-// 	learnItem.classList.add("dropdown");
-// 	toAdd = document.createElement("div");
-// 	toAdd.classList.add("dropdown-menu");
-// 	list = document.createElement("ul");
-// 	item1 = document.createElement("li");
-// 	item1.text = "Read";
-// 	list.appendChild(item1);
-// 	toAdd.appendChild(list);
-// 	learnItem.appendChild(toAdd);
-// });
