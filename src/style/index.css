@@ -26,13 +26,14 @@ body {
 /* Learn About Container */
 .learn-container {
 	background-color: #1A4381;
+	padding-bottom: 2.5rem;
 }
 
 .container-heading {
 	padding: 12px;
 	text-align: center;
 	color: white;
-	font-size: 40px;
+	font-size: 50px;
 	/* background-color: #1A4381; */
 }
 
@@ -77,12 +78,12 @@ body {
 
 .caption {
 	margin-top: 10px;
-	font-size: 1rem;
+	font-size: 24px;
 	text-align: center;
 	color: white;
 	position: absolute;
-	bottom: -1.75rem;
-	padding-left: 4rem;
+	bottom: -5rem;
+	padding-left: 1.5rem;
 }
 
 .box img {
@@ -103,6 +104,7 @@ body {
 	color: white;
 	text-align: center;
 	background-color: #1a4381c5;
+	font-size: 36px;
 	padding: 20px;
 	margin-bottom: 0px;
 }
@@ -114,10 +116,11 @@ body {
 }
 
 .stats-box p {
-	font-size: 1rem;
+	font-size: 24px;
 }
 .stats-box a {
 	color: white;
+	font-size: 16px;
 }
 
 /* About the Team Styling for Home Page */
@@ -128,6 +131,7 @@ body {
 	background-color: #727C80;
 	border: #727C80;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	font-size: 36px;
 	/* margin-top: 40px; */
 }
 
