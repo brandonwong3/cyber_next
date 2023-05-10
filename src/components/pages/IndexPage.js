@@ -60,6 +60,7 @@ const IndexPage = () => {
 					<div className='stats-box' style={{ flex: 1 }}>
 						<span>$9.4 Million</span>
 						<p>was the average cost of a data breach in the US in 2022.</p>
+
 						<p><a href="https://www.ibm.com/downloads/cas/3R8N1DZJ">- IBM Data</a></p>
 					</div>
 					<div className='stats-box' style={{ flex: 1 }}>
@@ -75,34 +76,56 @@ const IndexPage = () => {
 					<div className="about-container">
 						<div className="about-box">
 							<img src="/images/Anokhi.jpg" alt="Team Member Anokhi Shah" />
-							<p>Anokhi Shah</p>
+
+							<div className={'about-box-text-holder'}>
+								<p>Anokhi Shah</p>
+								<a href={"mailto:anokhi15@uw.edu"} target={"_blank"} rel={"noreferrer"}>anokhi15@uw.edu</a>
+							</div>
+
 						</div>
 					</div>
 					<div className="about-container">
 						<div className="about-box">
 							<img src="/images/Bandhna.jpg" alt="Team Member Bandhna Bedi" />
+
+							<div className={"about-box-text-holder"}>
 							<p>Bandhna Bedi</p>
+							<a href={"mailto:bandhna@uw.edu"} target={"_blank"} rel={"noreferrer"}>bandhna@uw.edu</a>
+								</div>
 
 						</div>
 					</div>
 					<div className="about-container">
 						<div className="about-box">
 							<img src="/images/Tyrell.jpg" alt="Team Member Tyrell Garza" />
+
+							<div className={"about-box-text-holder"}>
 							<p>Tyrell Garza</p>
-							<br />
-							tyrellgarza@outlook.com
+							<a href={"mailto:otgarza@uw.edu"} target={"_blank"} rel={"noreferrer"}>otgarza@uw.edu</a>
+								</div>
+
 						</div>
 					</div>
 					<div className="about-container">
 						<div className="about-box">
 							<img src="/images/Ishita.jpg" alt="Team Member Ishita Saxena" />
+
+							<div className={"about-box-text-holder"}>
 							<p>Ishita Saxena</p>
+							<a href={"mailto:ishitas2@uw.edu"} target={"_blank"} rel={"noreferrer"}>ishitas2@uw.edu</a>
+								</div>
+
 						</div>
 					</div>
 					<div className="about-container">
 						<div className="about-box">
 							<img src="/images/Brandon.jpg" alt="Team Member Brandon Wong" />
+
+							<div className={"about-box-text-holder"}>
 							<p>Brandon Wong</p>
+							<a href={"mailto:bwong3@uw.edu"} target={"_blank"} rel={"noreferrer"}>bwong3@uw.edu</a>
+								</div>
+
 						</div>
 					</div>
 				</div>
