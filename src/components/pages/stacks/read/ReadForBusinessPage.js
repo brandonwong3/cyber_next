@@ -48,17 +48,25 @@ const ReadForBusinessPage = () => {
 						<div className="business-dropdown-content">
 							<ul className="business-ul">
 								<li className="business-li">
-									<strong>With fewer resources and less technical expertise,</strong>{" "}
-									small businesses are seen as easier targets for cyberattacks.
+									<strong>Increased vulnerability: </strong>
+									<a href="https://www.fcc.gov/communications-business-opportunities/cybersecurity-small-businesses">
+											Small Businesses
+										</a> are often seen as easier targets for cyberattacks because they tend to have fewer resources and less technical expertise.
 								</li>
 								<li className="business-li">
-									“There are two types of companies, those who have been hacked and those who do not know they have been targeted yet” - Cisco CEO John Chambers
-								</li>
+								<strong>Data breach consequences:</strong> 
+								<a href="https://www.ibm.com/security/digital-assets/cost-data-breach-report/#/">
+											Data breaches
+										</a> can lead to financial losses, damage to reputation, and loss of customer trust, which can be particularly devastating for small businesses.								</li>
 								<li className="business-li">
-									A small enterprise -cyber event can cascade against their relatively smaller technology architecture before they conjure an adequate response.								</li>
+								<strong>Regulatory compliance:</strong> Small businesses are subject to the same legal and 
+								<a href="https://www.ftc.gov/tips-advice/business-center/guidance/protecting-personal-information-guide-business">
+											regulatory
+										</a> requirements related to privacy and data protection as larger companies. Inadequate security measures can result in non-compliance, leading to fines and penalties.</li>
 								<li className="business-li">
-									Small businesses are subject to the same legal and regulatory requirements related to privacy/data protection. Inadequate security means non-compliance, leading to the company being vulnerable to penalties.
-								</li>
+								<strong>Supply chain attacks:</strong> Small businesses can be used as an entry point for cybercriminals to gain access to larger companies through supply chain attacks. Ensuring your business has robust cybersecurity measures in place can help prevent such attacks and protect your partners.								</li>
+								<li className="business-li">
+								<strong>Business continuity:</strong> Cyberattacks can lead to downtime and disrupt business operations. Implementing cybersecurity measures can help maintain business continuity and ensure that you can recover quickly from any incidents.								</li>
 							</ul>
 						</div>
 					</div>

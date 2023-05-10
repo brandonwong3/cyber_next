@@ -21,7 +21,7 @@ const Navbar = () => {
 			<div className="container-fluid w-full flex flex-grow flex-row justify-between">
 				<div className={"flex flex-row justify-start items-center"}>
 					<img alt={"Navbar Brand"} src={"https://cdn-icons-png.flaticon.com/512/108/108181.png"} height={20} width={20} className={"mr-1"} />
-					<Link to={"/"} className="navbar-brand text-white font-bold font-italic"><u>PenSec</u></Link>
+					<Link to={"/"} className="navbar-brand text-white font-bold"><u>PenSec</u></Link>
 				</div>
 
 				<div className={"navbar-nav"}>
@@ -29,7 +29,7 @@ const Navbar = () => {
 					{
 						(currentUser && Object.keys(currentUser).length > 0) ?
 						<img onClick={async () => await handleLogout()} alt={"Logout button"} src={logoutArrow} height={20} width={20} className={"cursor-hover ml-1"} /> :
-                        <Link to={"/login"} className="nav-link active text-white font-italic mr-2" aria-current="page">Log In</Link>
+                        <Link to={"/login"} className="nav-link active text-white mr-2" aria-current="page">Log In</Link>
 					}
 				</div>
 
@@ -53,8 +53,8 @@ const NavDropdownSection = () => {
 							Read
 						</a>
 						<ul className="dropdown-menu" aria-labelledby="read-dropdown-menu-link">
-							<li><Link className="dropdown-item" to={"/read/for-business"}>For Business</Link></li>
-							<li><Link className="dropdown-item" to={"/read/for-students"}>For Students</Link></li>
+							<li><Link className="dropdown-item" to={"/read/for-business"}>Securing Your Business</Link></li>
+							<li><Link className="dropdown-item" to={"/read/for-students"}>What Pen Testing Is</Link></li>
 							<li><Link className="dropdown-item" to={"/read/whats-next"}>What's Next?</Link></li>
 						</ul>
 					</li>
@@ -62,10 +62,10 @@ const NavDropdownSection = () => {
 			</div>
 
 			{/* LEARN */}
-			<Link className={"nav-link active text-white font-italic mr-2"} to={"/learn"}>Learn</Link>
+			<Link className={"nav-link active text-white mr-2"} to={"/learn"}>Learn</Link>
 
 			{/*	PRACTICE */}
-			<Link className={"nav-link active text-white font-italic mr-2"} to={"/practice"}>Practice</Link>
+			<Link className={"nav-link active text-white mr-2"} to={"/practice"}>Practice</Link>
 
 		</>
 	)

@@ -112,7 +112,7 @@
   min-width: 50px;
   background-color:  #1A4381;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  border-radius: 25px;
   padding: 1rem;
   margin-top: 0.5rem;
   max-height: 200px;
@@ -138,7 +138,7 @@
   line-height: 1.5;
   color: #f5fafa;
   text-shadow: 1px 1px #0e0e0e;
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
 
 .business-video-container {
@@ -196,7 +196,7 @@
   color: #000205;
   font-size: 1.2rem;
   padding: 0.5rem;
-  border-radius: 15px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   position: relative;
