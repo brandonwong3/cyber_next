@@ -6,6 +6,11 @@ body {
 	background-image: url('../../public/images/background.jpeg');
 }
 
+h2 {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
 /* Home Page Styling */
 
 .homeDescr {
