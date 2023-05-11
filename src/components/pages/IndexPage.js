@@ -70,6 +70,20 @@ const IndexPage = () => {
 					</div>
 				</div>
 
+				{/* Demo Video Container */}
+				<h2 className='video-heading'>PenSec Website Demo Video:</h2>
+				<div className="video-container">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/fAqAtzu6BQg"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen>
+					</iframe>
+				</div>
+
 				{/* About Section */}
 				<h2 className='about-heading'>Meet the Team:</h2>
 				<div className='about-main-container'>
@@ -89,9 +103,9 @@ const IndexPage = () => {
 							<img src="/images/Bandhna.jpg" alt="Team Member Bandhna Bedi" />
 
 							<div className={"about-box-text-holder"}>
-							<p>Bandhna Bedi</p>
-							<a href={"mailto:bandhna@uw.edu"} target={"_blank"} rel={"noreferrer"}>bandhna@uw.edu</a>
-								</div>
+								<p>Bandhna Bedi</p>
+								<a href={"mailto:bandhna@uw.edu"} target={"_blank"} rel={"noreferrer"}>bandhna@uw.edu</a>
+							</div>
 
 						</div>
 					</div>
@@ -100,9 +114,9 @@ const IndexPage = () => {
 							<img src="/images/Tyrell.jpg" alt="Team Member Tyrell Garza" />
 
 							<div className={"about-box-text-holder"}>
-							<p>Tyrell Garza</p>
-							<a href={"mailto:otgarza@uw.edu"} target={"_blank"} rel={"noreferrer"}>otgarza@uw.edu</a>
-								</div>
+								<p>Tyrell Garza</p>
+								<a href={"mailto:otgarza@uw.edu"} target={"_blank"} rel={"noreferrer"}>otgarza@uw.edu</a>
+							</div>
 
 						</div>
 					</div>
@@ -111,9 +125,9 @@ const IndexPage = () => {
 							<img src="/images/Ishita.jpg" alt="Team Member Ishita Saxena" />
 
 							<div className={"about-box-text-holder"}>
-							<p>Ishita Saxena</p>
-							<a href={"mailto:ishitas2@uw.edu"} target={"_blank"} rel={"noreferrer"}>ishitas2@uw.edu</a>
-								</div>
+								<p>Ishita Saxena</p>
+								<a href={"mailto:ishitas2@uw.edu"} target={"_blank"} rel={"noreferrer"}>ishitas2@uw.edu</a>
+							</div>
 
 						</div>
 					</div>
@@ -122,9 +136,9 @@ const IndexPage = () => {
 							<img src="/images/Brandon.jpg" alt="Team Member Brandon Wong" />
 
 							<div className={"about-box-text-holder"}>
-							<p>Brandon Wong</p>
-							<a href={"mailto:bwong3@uw.edu"} target={"_blank"} rel={"noreferrer"}>bwong3@uw.edu</a>
-								</div>
+								<p>Brandon Wong</p>
+								<a href={"mailto:bwong3@uw.edu"} target={"_blank"} rel={"noreferrer"}>bwong3@uw.edu</a>
+							</div>
 
 						</div>
 					</div>
